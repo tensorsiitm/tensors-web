@@ -29,18 +29,6 @@
 	</head>
 
 	<body>
-		<div id="fb-root">
-		</div>
-		<script>
-			(function(d, s, id) {
-  				var js, fjs = d.getElementsByTagName(s)[0];
-  				if (d.getElementById(id)) return;
-  				js = d.createElement(s); js.id = id;
-  				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1601147803523286";
-  				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-
 		<div id="particles-js">
 		</div>
 
@@ -432,14 +420,15 @@
 
 		<div id="contact" class="footer text-center spacer">
 			<p>
-				<div class="fb-like" data-href="https://www.facebook.com/tensorsexam/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true">
-				</div>
+				<a href="https://www.facebook.com/tensorsexam/" id="facebook_button">
+					<i class="fa fa-facebook fa-3x"></i>
+				</a>
 				<br>
-				<a href="#">
+				<a href="mailto:head@tensors.in" target="_top">
 					head@tensors.in
 				</a>
 				<br>
-				<a href="#">
+				<a href="mailto:reachtensors@gmail.com" target="_top">
 					reachtensors@gmail.com
 				</a>
 			</p>
