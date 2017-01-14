@@ -483,4 +483,10 @@ p {
 		margin-top: 2em;
 		padding-bottom: 2em;
 	}
+
+	#pc_o,
+	#riits_o,
+	#inspire_o {
+		display: block;
+	}
 }
