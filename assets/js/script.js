@@ -5,6 +5,27 @@ jQuery(document).ready(function($) {
 		$(".scroll li").removeClass('active');
 		$(this).parents('li').toggleClass('active');
 	});
+
+	$('#inspire_c').mouseover(function() {
+		$('#inspire_o').show(0);
+	});
+	$('#inspire_c').mouseout(function() {
+		$('#inspire_o').hide(0);
+	});
+
+	$('#riits_c').mouseover(function() {
+		$('#riits_o').show(0);
+	});
+	$('#riits_c').mouseout(function() {
+		$('#riits_o').hide(0);
+	});
+
+	$('#pc_c').mouseover(function() {
+		$('#pc_o').show(0);
+	});
+	$('#pc_c').mouseout(function() {
+		$('#pc_o').hide(0);
+	});
 });
 
 var wow = new WOW({

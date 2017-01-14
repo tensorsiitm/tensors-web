@@ -345,6 +345,26 @@ p {
 	margin-bottom: 20px;
 }
 
+#inspire_c,
+#riits_c,
+#pc_c {
+	position: relative;
+	display: inline-block;
+}
+
+#pc_o,
+#riits_o,
+#inspire_o {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 100;
+	width: 100%;
+}
+
 .spons_pic {
 	cursor: pointer;
 	max-width: 90%;
