@@ -365,6 +365,11 @@ p {
 	width: 100%;
 }
 
+#hire {
+	position: relative;
+	bottom: -60px;
+}
+
 .spons_pic {
 	cursor: pointer;
 	max-width: 90%;
