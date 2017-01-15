@@ -365,9 +365,24 @@ p {
 	width: 100%;
 }
 
+#centres > ul > .active > a {
+	background-color: #239F85;
+	color: white;
+}
+
+#centres > ul > li > a {
+	color: #239F85;
+}
+
 #hire {
 	position: relative;
 	bottom: -60px;
+}
+
+.center_content > div > p > a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
 }
 
 .spons_pic {
