@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <meta content="The official website of Tensors 2017, the annual mock JEE test conducted by the Students' Forum of IIT Madras" name="description">
+      <meta content="iit, iitm, iit madras, tensors, tensors exam, mock jee, iit mock test, iit sample, iit tensors, iitm tensors, jee advanced" name="keywords">
+      <title>Results | Tensors 2017</title>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   </head>
+   <body style="font-family: Roboto, sans-serif;text-align: center;">
+   		 <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-86288857-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<div ng-app="" ng-init="centers=[{
+    	'region': 'Kottayam',
+    	'center': [{
+    		'name': 'Brilliant Study Centre, Pala',
+    		'code': 'KTM1'
+    	}, {
+    		'name': 'Kuriakose Elias School, Mannanam',
+    		'code': 'KTM2'
+    	}, {
+    		'name': 'St Antonys Public School, Anakkal',
+    		'code': 'KTM4'
+    	}, {
+    		'name': 'Placid Vidhya Vihar, Chethipuzha',
+    		'code': 'KTM3'
+    	}, {
+    		'name': 'Inspire Learning Pvt Ltd, Kottayam',
+    		'code': 'KTM5'
+    	}, {
+    		'name': 'Chavara CMI Public School, Kottayam',
+    		'code': 'KTM6'
+    	}]
+    }, {
+    	'region': 'Trivandrum',
+    	'center': [{
+    		'name': 'Math IIT, Kowdiar',
+    		'code': 'TVM2'
+    	}, {
+            'name': 'Arya Central School',
+            'code': 'TVM1'
+        }]
+    }, {
+    	'region': 'Thrissur',
+    	'center': [{
+    		'name': 'Riju & PSK Classes, Kolazhy',
+    		'code': 'TCR1'
+    	}, {
+    		'name': 'Prof. P.C.Thomas Classes, Pallikkulam',
+    		'code': 'TCR3'
+    	}, {
+    		'name': 'Vijayagiri Public School, Annalloor',
+    		'code': 'TCR2'
+    	}]
+    }, {
+    	'region': 'Malapuram',
+    	'center': [{
+    		'name': 'Panakkad Pookkoya Thangal Memorial School, Kondotty',
+    		'code': 'MLP4'
+    	}, {
+    		'name': 'Manjeri',
+    		'code': 'MLP3'
+    	}, {
+    		'name': 'Universal Institute, Kottakkal',
+    		'code': 'MLP1'
+    	}, {
+    		'name': 'Bhabha Institute, Kottakkal',
+    		'code': 'MLP2'
+    	}]
+    }, {
+    	'region': 'Kozhikode',
+    	'center': [{
+    		'name': 'Rays Education, Kanakasree Building',
+    		'code': 'CLT1'
+    	}, {
+    		'name': 'Brain Station, Puthiyara',
+    		'code': 'CLT3'
+    	}, {
+    		'name': 'The Intelligent Planning Forum, Kozhikode',
+    		'code': 'CLT2'
+    	}]
+    }, {
+    	'region': 'Ernakulam',
+    	'center': [{
+    		'name': 'Brilliant Study Centre, Thevara',
+    		'code': 'EKM3'
+    	}, {
+    		'name': 'Saraswathi Vidyaniketan Public School, Elamakkara',
+    		'code': 'EKM1'
+    	}, {
+            'name': 'FIITJEE Kochi Centre',
+            'code': 'EKM2'
+        }]
+    }, {
+    	'region': 'Kollam',
+    	'center': [{
+    		'name': 'RIITS, Kollam',
+    		'code': 'KLM1'
+    	}]
+    }, {
+    	'region': 'Palakkad',
+    	'center': [{
+    		'name': 'Sakthan Thampuran College & Jayaram Education Centre, Palakkad',
+    		'code': 'PKD1'
+    	}]
+    }, {
+    	'region': 'Hyderabad',
+    	'center': [{
+    		'name': 'MS Junior College, Malakpet',
+    		'code': 'HYD1'
+    	}]
+    }];" style="margin: 10% 10%;">
+    <img src="http://tensors.in/assets/images/logof.png" style="max-width: 600px; width: 80vw;">
+    		<div ng-repeat="c in centers" style="    margin: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    padding: 20px;
+    text-align: left;">
+    			<h2 style="color: #707070; font-size: 30px; line-height: 33px;font-weight: 500;">{{c.region}}</h2>
+    			<ul>
+    				<li ng-repeat="l in c.center">
+    					<a ng-href="http://tensors.in/assets/pdf/{{l.code}}.pdf" target="_blank" style="font-size: 14px; line-height: 30px; color: rgb(22, 160, 133);text-decoration: none;font-weight: 300;">
+    						{{l.name}}
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+			
+		</div>
+
+		<div>
+			<p>Tensors © 2017</p>
+			<p><a href="mailto:tensors2017@gmail.com" target="_top" style="color: #AAAAAA">tensors2017@gmail.com</a> | <a href="https://www.facebook.com/tensorsexam/" target="_blank" style="color: #AAAAAA">Facebook</a></p>
+		</div>
+
+   </body>
+</html>
