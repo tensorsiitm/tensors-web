@@ -9,8 +9,69 @@
       <title>Results | Tensors 2017</title>
       <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
       <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
       <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <style type="text/css">
+          .list-type1{
+width:500px;
+margin-left:30px;
+}
+
+.list-type1 ol{
+counter-reset: li;
+list-style: none;
+*list-style: decimal;
+font-size: 15px;
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin-bottom: 4em;
+}
+.list-type1 ol ol{
+margin: 0 0 0 2em;
+}
+
+.list-type1 a{
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+*padding: .4em;
+margin: .5em 0;
+background: #00a087;
+color: #000;
+text-decoration: none;
+-moz-border-radius: .3em;
+-webkit-border-radius: .3em;
+border-radius: 10em;
+transition: all .2s ease-in-out;
+}
+
+.list-type1 a:hover{
+background: #d6d4d4;
+text-decoration:none;
+transform: scale(1.1);
+}
+
+.list-type1 a:before{
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background:#00a087;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid #fff;
+text-align: center;
+font-weight: bold;
+-moz-border-radius: 2em;
+-webkit-border-radius: 2em;
+border-radius: 2em;
+color:#FFF;
+}
+      </style>
    </head>
    <body style="font-family: Roboto, sans-serif;text-align: center;">
    		 <script>
@@ -38,21 +99,15 @@
     		'name': 'Placid Vidhya Vihar, Chethipuzha',
     		'code': 'KTM3'
     	}, {
-    		'name': 'Inspire Learning Pvt Ltd, Kottayam',
-    		'code': 'KTM5'
-    	}, {
     		'name': 'Chavara CMI Public School, Kottayam',
-    		'code': 'KTM6'
+    		'code': 'KTM5'
     	}]
     }, {
     	'region': 'Trivandrum',
     	'center': [{
     		'name': 'Math IIT, Kowdiar',
-    		'code': 'TVM2'
-    	}, {
-            'name': 'Arya Central School',
-            'code': 'TVM1'
-        }]
+    		'code': 'TVM1'
+    	}]
     }, {
     	'region': 'Thrissur',
     	'center': [{
@@ -66,18 +121,15 @@
     		'code': 'TCR2'
     	}]
     }, {
-    	'region': 'Malapuram',
+    	'region': 'Malappuram',
     	'center': [{
-    		'name': 'Panakkad Pookkoya Thangal Memorial School, Kondotty',
-    		'code': 'MLP4'
-    	}, {
-    		'name': 'Manjeri',
+    		'name': 'Kottukara Higher Secondary School, Kondotty',
     		'code': 'MLP3'
     	}, {
     		'name': 'Universal Institute, Kottakkal',
     		'code': 'MLP1'
     	}, {
-    		'name': 'Bhabha Institute, Kottakkal',
+    		'name': 'Bhabha Institute, Manjeri',
     		'code': 'MLP2'
     	}]
     }, {
@@ -109,18 +161,15 @@
     	'center': [{
     		'name': 'RIITS, Kollam',
     		'code': 'KLM1'
-    	}]
+    	}, {
+            'name': 'Trinity Lyceum School, Thangassery',
+            'code': 'KLM2'
+        }]
     }, {
     	'region': 'Palakkad',
     	'center': [{
     		'name': 'Sakthan Thampuran College & Jayaram Education Centre, Palakkad',
     		'code': 'PKD1'
-    	}]
-    }, {
-    	'region': 'Hyderabad',
-    	'center': [{
-    		'name': 'MS Junior College, Malakpet',
-    		'code': 'HYD1'
     	}]
     }];" style="margin: 10% 10%;">
     <img src="http://tensors.in/assets/images/logof.png" style="max-width: 600px; width: 80vw;">
@@ -128,21 +177,24 @@
     box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
     padding: 20px;
     text-align: left;">
-    			<h2 style="color: #707070; font-size: 30px; line-height: 33px;font-weight: 500;">{{c.region}}</h2>
-    			<ul>
-    				<li ng-repeat="l in c.center">
-    					<a ng-href="http://tensors.in/assets/pdf/{{l.code}}.pdf" target="_blank" style="font-size: 14px; line-height: 30px; color: rgb(22, 160, 133);text-decoration: none;font-weight: 300;">
-    						{{l.name}}
-    					</a>
-    				</li>
-    			</ul>
+    			<h2 style="color: #707070; font-family: 'Exo 2'; font-size: 30px; line-height: 33px;font-weight: 500;">{{c.region}}</h2>
+                <div class="list-type1">
+        			<ol>
+        				<li ng-repeat="l in c.center">
+        					<!--<a ng-href="http://tensors.in/assets/pdf/{{l.code}}.pdf" target="_blank" style="font-size: 14px; line-height: 30px; color: rgb(22, 160, 133);text-decoration: none;font-weight: 300;">
+        						{{l.name}}
+        					</a>-->
+                            <a style="font-size: 14px; font-family: 'Exo 2'; color:white; line-height: 30px;text-decoration: none;font-weight: 300;">{{l.name}}</a>
+        				</li>
+        			</ol>
+                </div>
     		</div>
 			
 		</div>
 
 		<div>
 			<p>Tensors © 2017</p>
-			<p><a href="mailto:tensors2017@gmail.com" target="_top" style="color: #AAAAAA">tensors2017@gmail.com</a> | <a href="https://www.facebook.com/tensorsexam/" target="_blank" style="color: #AAAAAA">Facebook</a></p>
+			<p><a href="mailto:tensors2018@gmail.com" target="_top" style="color: #AAAAAA">tensors2018@gmail.com</a> | <a href="https://www.facebook.com/tensorsexam/" target="_blank" style="color: #AAAAAA">Facebook</a></p>
 		</div>
 
    </body>
