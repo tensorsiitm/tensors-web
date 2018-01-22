@@ -88,6 +88,8 @@ color:#FFF;
 		</script>
 		<div ng-app="" ng-init="centers=[{
     	'region': 'Kottayam',
+        'contactName': 'Jithin Poulose',
+        'contactNo': '+91 9496058889',
     	'center': [{
     		'name': 'Brilliant Study Centre, Pala',
     		'code': 'KTM1'
@@ -106,12 +108,16 @@ color:#FFF;
     	}]
     }, {
     	'region': 'Trivandrum',
+        'contactName': 'Amey Ajukumar',
+        'contactNo': '+91 9495080072',
     	'center': [{
     		'name': 'Math IIT, Kowdiar',
     		'code': 'TVM1'
     	}]
     }, {
     	'region': 'Thrissur',
+        'contactName': 'Muhammed Ameen',
+        'contactNo': '+91 9539512022',
     	'center': [{
     		'name': 'Riju & PSK Classes, Kolazhy',
     		'code': 'TCR1'
@@ -124,6 +130,8 @@ color:#FFF;
     	}]
     }, {
     	'region': 'Malappuram',
+        'contactName': 'Av Shamil',
+        'contactNo': '+91 9962768672',
     	'center': [{
     		'name': 'Kottukara Higher Secondary School, Kondotty',
     		'code': 'MLP3'
@@ -136,6 +144,8 @@ color:#FFF;
     	}]
     }, {
     	'region': 'Kozhikode',
+        'contactName': 'Abhijith Sivadasan',
+        'contactNo': '+91 9446090097',
     	'center': [{
     		'name': 'Rays Education, Kanakasree Building',
     		'code': 'CLT1'
@@ -151,6 +161,8 @@ color:#FFF;
         }]
     }, {
     	'region': 'Ernakulam',
+        'contactName': 'Adwaith Nath',
+        'contactNo': '+91 9526117965',
     	'center': [{
     		'name': 'Brilliant Study Centre, Thevara',
     		'code': 'EKM3'
@@ -163,6 +175,8 @@ color:#FFF;
         }]
     }, {
     	'region': 'Kollam',
+        'contactName': 'Koshy Thomas',
+        'contactNo': '+91 9496368592',
     	'center': [{
     		'name': 'RIITS, Kollam',
     		'code': 'KLM1'
@@ -172,6 +186,8 @@ color:#FFF;
         }]
     }, {
     	'region': 'Palakkad',
+        'contactName': 'Shafeef Omar',
+        'contactNo': '+91 8547969069',
     	'center': [{
     		'name': 'Sakthan Thampuran College & Jayaram Education Centre, Palakkad',
     		'code': 'PKD1'
@@ -192,6 +208,7 @@ color:#FFF;
                             <a ng-repeat="l in c.center" class="lis" style="font-size: 14px; font-family: 'Exo 2'; color:white; line-height: 30px;text-decoration: none;font-weight: 300;">{{l.name}}</a>
         			</ol>
                 </div>
+                <div style="text-align: right;font-family: 'Exo 2';color: #707070;">{{c.contactName}}:<a style="text-decoration: none;" ng-href="tel:{{c.contactNo}}"> {{c.contactNo}}</a> </div>
     		</div>
 			
 		</div>
