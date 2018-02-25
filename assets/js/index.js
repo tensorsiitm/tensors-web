@@ -7,11 +7,11 @@ angular.module('mainApp', ['ngCookies'])
 
 
   .controller('mainController', function($scope) {
-	  	// $scope.setData = function(code){
-	  	// 	localStorage.setItem('code',code);
-	  	// 	localStorage.setItem('type',code);
-	  	// 	window.location.href = "results.html";
+	  	$scope.setData = function(code){
+	  		localStorage.setItem('code',code);
+	  		localStorage.setItem('type',code);
+	  		//window.location.href = "results.html";
 
-	  	// }
+	  	}
   });
 
