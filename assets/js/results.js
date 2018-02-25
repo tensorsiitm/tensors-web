@@ -20,6 +20,6 @@ angular.module('resultsApp', ['ngCookies'])
 		$scope.loader = true;
 		$timeout(function () {
 			$scope.loader = false;
-		}, 4000);
+		}, 4500);
   });
 
