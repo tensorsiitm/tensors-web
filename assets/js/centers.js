@@ -12,7 +12,7 @@ angular.module('centersApp', ['ngCookies'])
   	$scope.setCenter = function(code){
   		localStorage.setItem('code',code);
   		localStorage.setItem('type','res');
-  		//window.location.href = "results.html";
+  		window.location.href = "results.html";
 
   	}
 
