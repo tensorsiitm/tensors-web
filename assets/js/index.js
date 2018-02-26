@@ -10,7 +10,7 @@ angular.module('mainApp', ['ngCookies'])
 	  	$scope.setData = function(code){
 	  		localStorage.setItem('code',code);
 	  		localStorage.setItem('type',code);
-	  		window.location.href = "results.html";
+	  		//window.location.href = "results.html";
 
 	  	}
   });
