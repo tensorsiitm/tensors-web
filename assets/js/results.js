@@ -9,10 +9,11 @@ angular.module('resultsApp', ['ngCookies'])
   .controller('resultsController', function($scope, $http, $timeout) {
 	  	var code = localStorage.getItem('code');
 	  	$scope.resultType = localStorage.getItem('type'); 
-		var dataRef = firebase.database().ref("0/"+code);
+		var dataRef = firebase.database().ref("/"+code);
 
 		dataRef.on('value', function(snapshot){
 				$scope.data = snapshot.val();
+				console.log($scope.data)
 		});
 		$scope.loader = true;
 		$timeout(function () {

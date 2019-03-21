@@ -93,12 +93,12 @@
                             <td ng-if="resultType == 'mains'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.MC==null">-</span>{{d.MC}} </td>
                             <td ng-if="resultType == 'mains'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.MM==null">-</span>{{d.MM}} </td>
                             <td ng-if="resultType == 'mains'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.MTOTAL==null">-</span>{{d.MTOTAL}} </td>
-                            <td style="background-color: #01a087;color:white" ng-if="resultType == 'mains'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.MRank==null && d.Rank==null && d.resultType == `res`">-</span>{{d.MRank}}{{d.Rank}}{{d.MRANK}}<span ng-if="resultType == 'mains'">{{$index+1}}</span></td>
+                            <td style="background-color: #01a087;color:white" ng-if="resultType == 'mains'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.MRANK==null">-</span>{{d.MRANK}}</td>
                             <td ng-if="resultType == 'adv'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.AP==null">-</span>{{d.AP}}</td>
                             <td ng-if="resultType == 'adv'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.AC==null">-</span>{{d.AC}}</td>
                             <td ng-if="resultType == 'adv'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.AM==null">-</span>{{d.AM}}</td>
                             <td ng-if="resultType == 'adv'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.ATOTAL==null">-</span>{{d.ATOTAL}}</td>
-                            <td style="background-color: #01a087;color:white" ng-if="resultType == 'adv'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.ARank==null && d.Rank==null && d.resultType == `res`">-</span>{{d.ARank}}{{d.Rank}}{{d.ARANK}}<span ng-if="resultType == 'adv'">{{$index+1}}</span></td>
+                            <td style="background-color: #01a087;color:white" ng-if="resultType == 'adv'|| resultType == 'res' || resultType == 'top50'"><span ng-if="d.ARANK==null">-</span>{{d.ARANK}}</td>
                         </tr>
                     </tbody>      
                 </table>
@@ -125,19 +125,19 @@
               </script>
 
 
-     <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
-      <script>
-        // Initialize Firebase
-        var config = {
-          apiKey: "AIzaSyBqpcSSfop24LfYIWKI9Wcc48Le48eFcP0",
-          authDomain: "tensors-d7232.firebaseapp.com",
-          databaseURL: "https://tensors-d7232.firebaseio.com",
-          projectId: "tensors-d7232",
-          storageBucket: "tensors-d7232.appspot.com",
-          messagingSenderId: "879877059989"
-        };
-        firebase.initializeApp(config);
-      </script>
+     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCxVexRUUm9njTVPAWGX_AScilv3z2OdAk",
+    authDomain: "tensors2019db.firebaseapp.com",
+    databaseURL: "https://tensors2019db.firebaseio.com",
+    projectId: "tensors2019db",
+    storageBucket: "tensors2019db.appspot.com",
+    messagingSenderId: "625587539804"
+  };
+  firebase.initializeApp(config);
+</script>
       <script src="assets/js/results.js"></script>
    </body>
 </html>
