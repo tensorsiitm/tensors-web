@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <meta content="The official website of Tensors 2020, the annual mock JEE test conducted by the Students' Forum of IIT Madras" name="description">
+      <meta content="iit, iitm, iit madras, tensors, tensors exam, mock jee, iit mock test, iit sample, iit tensors, iitm tensors, jee advanced, tensorsci, tensor social campaign, iit social, iit social project" name="keywords">
+      <title>DE-COV HACKATHON</title>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/animate.css" rel="stylesheet">
+      <link href="assets/css/set.css" rel="stylesheet">
+      <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+      <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link href="assets/css/decov.css" rel="stylesheet">
+      <script src="assets/js/angular.min.js"></script>
+      <script src="assets/js/angular-cookies.min.js"></script>
+      <script src="assets/js/index.js"></script>
+
+
+   </head>
+   <body ng-app="mainApp" ng-controller="mainController">
+      <script>(function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r; i[r]=i[r] || function(){(i[r].q=i[r].q || []).push(arguments)}, i[r].l=1 * new Date(); a=s.createElement(o), m=s.getElementsByTagName(o)[0]; a.async=1; a.src=g; m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-86288857-1', 'auto'); ga('send', 'pageview');</script>
+
+
+
+
+    <div id="particles-js"></div>
+
+
+
+        
+        <div class="row" id="topbar">
+            <div class="col-sm-6 col-xs-4" style="padding-left: 2%;">
+                <img alt="logo" src="assets/images/l.png">
+            </div>
+            <div class="col-sm-6 col-xs-8" style="text-align: right;">
+                <div class="social-icons social-icons-colored-hover">
+                    <ul>
+                        <li class="social-facebook"><a href="https://www.facebook.com/tensorsofficial"><i class="fa fa-facebook fa-1x"></i></a></li>
+                        <li class="social-instagram"><a href="https://www.instagram.com/tensors_official/"><i class="fa fa-instagram fa-1x"></i></a></li>
+                        <li class="social-linkedin"><a href="https://www.linkedin.com/company/53201198"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                        <li class="social-mail"><a href="mailto:tensorsofficial@gmail.com"><i class="fa fa-envelope fa-1x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+      
+        <div id="header">
+            <h1 class="animated fadeIn"><img src="assets/images/logof.png"></h1>
+            <h3>SAILING THROUGH NEW DIMENSIONS!</h3><br>
+        </div>
+
+
+        <center>
+            <h4><a href="#decovresults"><button class="answer_key wowload fadeInUp" style="width: 250px; height:35px;font-size: 0.85em;">DE-COV IDEATHON RESULT</button></a></h4></t>
+        </center>
+        
+
+
+        <div id="panel">
+            <br><br>
+            <h1>PANEL OF DE-COV IDEATHON</h1>
+            
+            <div class="row" style="padding-left: 5%;">
+                <div class="col-sm-2 col-xs-12">
+                    <center><strong><em>IN ASSOCIATION WITH</em></strong><br><br><img class="animated fadeInDown img-responsive img-circle" style="height: 150px;" alt="IMAlogo" src="assets/images/ima.jpg"><br><strong><em>JUDGE PANEL</em></strong><br><br></center>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <br><br><br>
+                    <div class="counter"><center><img class="wowload img-circle img-responsive" id="campaign" src="assets/images/panelmembers/panel1.jpg" style="width: 45%;"><strong><br>G VIJAYARAGHAVAN<br><br></strong></center></div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <br><br><br>
+                    <div class="counter"><center><img class="wowload img-circle img-responsive" id="campaign" src="assets/images/panelmembers/panel2.jpg" style="width: 45%;"><strong><br>PADMASREE MEENAKSHI GOPINATH</strong><br><br></center></div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <br><br><br>
+                    <div class="counter"><center><img class="wowload img-circle img-responsive" id="campaign" src="assets/images/panelmembers/panel3.jpg" style="width: 60%;"><strong><br>DR C V ANANDA BOSE IAS</strong><br><br></center></div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <br><br><br>
+                    <div class="counter"><center><img class="wowload img-circle img-responsive" id="campaign" src="assets/images/panelmembers/panel4.jpg" style="width: 50%;"><strong><br>R R ABHYANKAR<br><br></strong></center></div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <br><br><br>
+                    <div class="counter"><center><img class="wowload img-circle img-responsive" id="campaign" src="assets/images/panelmembers/panel5.JPG" style="width: 50%;"><strong><br>PROF UMESH BELLUR<br<br></strong></center></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about1">
+            <br>
+            <h1>WHAT IS DE-COV IDEATHON ?</h1>
+            <div class="row">
+                <div class="col-sm-6 col-xs-12" style="vertical-align: middle; font-size: medium; text-align: center; padding: 5%;">
+                    <br><br>
+                    <p>
+                        Tensors in association with the Indian Medical Association, Kerala conducted the DeCov Ideathon. 
+                        COVID-19 has struck every corner of this world and the entire human race is under strings of this deadly pandemic.
+                        Ideas and Innovation has empowered us ever since. The human brain can achieve impossible feats.
+                        Ideathon was conducted with an aim to find solutions for preventing the spread of the current pandemic and for recovering the global economy in the post-Corona period.
+                        The cash prize was 50K, also the best solutions and ideas will be sent to the government for the best possible implementation.
+                    </p>
+                    <p>
+                        The Pandemic has struck at the resources and skills of global population and made all incumbent systems redundant. 
+                        Helplessness and fear is spread wide and requires active minds to work on solutions to cope with issues in a Corona and Post-Corona phase.
+                        Being a holistic issue affecting all possible human domains, this requires multi lateral thinking and solutions inclusive of all sects. 
+                        The De-Cov challenge aims to tap into the most intelligent minds and citizens of the country to find solutions and provide channels for them to officially take it up to the concerned authorities.
+                        The Challenge was focussed on the following four channels:
+                    <br>
+                        1.Health Care &emsp; 2.Community &emsp; 3.Economy and Business &emsp; 4.Accessiibility
+                    </p>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <br><br>
+                    <p class="lead text-center text-muted pt-2 mb-5">DE-COV => Our contribution to the society</p>
+                        <ol class="timeline">
+
+                          <li class="timeline-element">
+                            <p><img class="img-fluid z-depth-1-half rounded" style="width: 100px;"src="assets/images/Posters/decovlogo.jpg" alt="..."></p>
+                            <p class="text-muted">
+                                <strong >Launched De-Cov</strong><br>
+                                <em><time datetime="2020-03-29">29 March 2020</time><br></em>
+                                We the Tensors Team decided to</p>
+                          </li>
+
+                          <li class="timeline-element">
+                            <p><a href="#panel"><button class="answer_key wowload fadeInUp">PANEL</button></a></p>
+                            <p class="text-muted">
+                                <strong >Panel Creation</strong><br>
+                                <em><time datetime="2020-04-03">03 April 2020 - 09 April 2020</time><br></em>
+                                A strong and expertised panel was created to analyse the projects and evaluate</p>
+                          </li>
+
+                          <li class="timeline-element">
+                            <p class="text-muted">
+                                <strong >Last date of registration</strong><br>
+                                <em><time datetime="2020-04-06">06 April 2020</time><br></em>
+                                The registration was closed.</p>
+                          </li>
+
+                          <li class="timeline-element">
+                            <p><img class="img-fluid z-depth-1-half rounded" style="width: 100px;"src="assets/images/Posters/decovresult2.jpg" alt="..."></p>
+                            <p class="text-muted">
+                                <strong >Completion of evaluation</strong><br>
+                                <em><time datetime="2020-05-14">14 May 2020</time><br></em>
+                                The evaluation was completed and results decided.</p>
+                          </li>
+
+                          <li class="timeline-element">
+                            <p><a href="https://www.instagram.com/p/CAvCzqyg7gP/?utm_source=ig_web_copy_link" id="facebook_button" target="_blank"><i class="fa fa-instagram fa-3x fadeInDown"></i></a></p>
+                            <p class="text-muted">
+                                <strong >Declaration of results</strong><br>
+                                <em><time datetime="2020-05-28">28 May 2020</time><br></em>
+                                The results were declared.</p>
+                          </li> 
+                        </ol>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-info" id="highlight-info">
+            <div class="overlay spacer">
+               <div class="container">
+                  <div class="row text-center">
+                     <div class="col-sm-4 col-xs-12">
+                        <div class="counter wowload fadeInDown">
+                           <div class="stat"><span class="timer" data-from="0" data-to="792" id="counter1">792</span></div>
+                           <div class="stat-info">PARTICIPANTS REGISTERED<br><br></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 col-xs-12">
+                        <div class="counter wowload fadeInDown" style="-webkit-animation-delay: .5s; animation-delay: .5s;">
+                           <div class="stat"><span class="timer" data-from="0" data-to="431" id="counter2">431</span></div>
+                           <div class="stat-info">TEAMS REGISTERED<br><br></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 col-xs-12">
+                        <div class="counter wowload fadeInDown" style="-webkit-animation-delay: .5s; animation-delay: .5s;">
+                           <div class="stat"><span class="timer" data-from="0" data-to="279" id="counter2">279</span></div>
+                           <div class="stat-info">Colleges / Organisations<br><br></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="foot-links">
+                            <ul class="ch-grid"  >
+                                <li>
+                                    <div class="ch-item ch-img-1">
+                                        <div class="ch-info">
+                                            <h3>Spread<br>Throughout<br>India</h3>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="foot-links">
+                            <ul class="ch-grid"  >
+                                <li>
+                                    <div class="ch-item ch-img-1">
+                                        <div class="ch-info">
+                                            <h3>Across<br>15+<br>States</h3>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                      <div class="col-sm-2 col-xs-4">
+                            <div class="foot-links">
+                                <ul class="ch-grid"  >
+                                    <li>
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3>99<br>Management Registration</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <div class="foot-links">
+                                <ul class="ch-grid"  >
+                                    <li>
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3>16<br>Corporate Registration</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <div class="foot-links">
+                                <ul class="ch-grid"  >
+                                    <li>
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3>570<br>Engineering Registration</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <div class="foot-links">
+                                <ul class="ch-grid"  >
+                                    <li>
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3>48<br>Other Registration</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+
+         <div class="result" id="decovresults">
+            <div class="container my-5">
+
+                <section class="text-center">
+              
+                  <h3 class="font-weight-bold dark-grey-text pb-2 mb-4">RESULTS OF<br>DE-COV IDEATHON<br>2020</h3>
+                  <p class="text-muted w-responsive mx-auto mb-5">We proudly announce the results from a pool of about 800 participents from all over nation</p>
+                  <p class="text-muted w-responsive mx-auto mb-5">Congratulations to both the winners as well as all the other teams that came up with innovative ideas for recovering from the current pandemic. The best 15 ideas will be forwarded to the government. Moreover, a huge thank you to all our judges. Let us all stay united and fight towards a healthier society.</p>
+              
+                </section>
+
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12" style="padding: 2%;">
+                       <h4><a class="nav-link" id="contact-tab-md" data-toggle="tab" href="#prize1-md" role="tab" aria-controls="contact-md"
+                           aria-selected="false"><button class="answer_key wowload fadeInUp" style="width: 250px; height:35px;font-size: 0.85em;">1<sup>ST</sup> PRIZE&emsp;&emsp;&emsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a></h4></t>
+                       <h4><a class="nav-link active" id="home-tab-md" data-toggle="tab" href="#prize2-md" role="tab" aria-controls="home-md"
+                           aria-selected="true"><button data-target="#prize1" class="answer_key wowload fadeInUp" style="width: 250px; height:35px;font-size: 0.85em;">2<sup>ND</sup> PRIZE&emsp;&emsp;&emsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a></h4></t>    
+                    </div>
+                    <br>
+                    <div class="col-sm-8 col-xs-12 tab-content card pt-5" id="myTabContentMD" style="background-color: rgba(22,160,133,0.7); padding: 5%;text-align: center; vertical-align: middle;">
+                        <div class="tab-pane fade" id="prize1-md" role="tabpanel" aria-labelledby="contact-tab-md">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4" style="text-align: left; padding: 2%;">
+                                    <img alt="logo" src="assets/images/l.png">
+                                </div>
+                                <div class="col-xs-8 col-sm-8" style="text-align: right; padding: 2%;">
+                                    <h4>Congrats to <strong>1<sup>st</sup> Prize</strong></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <strong><h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: xx-large;">TEAM ZHCETIANS</h4><br></strong>
+                                    <h4><strong><mark>'REMOTE MONITORING OF PATIENTS ND APPLYING DEEP LEARNING ON COLLECTED DATABASE'</mark></strong></h4>
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: right;vertical-align: middle;">
+                                <div class="col-xs-12 col-sm-12">
+                                    <h5>CashPrize of <strong>Rs 30,000/-</strong></h5>
+                                </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6" style="padding: 2%;">
+                                    <center>
+                                        <ul class="ch-grid1"  >
+                                            <li>
+                                                <div class="ch-item1 ch-img1">
+                                                    <div class="ch-info1">
+                                                        <center><br><br><h6>DANISH<br>AZAD<br>KHAN</h6></center>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </center>
+                                </div>
+                                <div class="col-xs-12 col-sm-6" style="padding: 2%;">
+                                    <center>
+                                        <ul class="ch-grid1">
+                                            <li>
+                                                <div class="ch-item1 ch-img2">
+                                                    <div class="ch-info1">
+                                                        <center><br><br><h6>MOHAMMED<br>ASIF<br>ZAMEER</h6></center>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4" style="text-align: left;">
+                                    <br><br><h4 style="font-family: sans-serif;">PROJECT :</h4>
+                                </div>
+                                <div class="col-xs-8 col-sm-8" style="text-align: right;">
+                                    <br><br><h4 style="font-family: sans-serif;">Came up with the 'Remote Monitoring of Patients and Applying Deep Learning on the Collected Database'to predict Covid-19 spread.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="prize2-md" role="tabpanel" aria-labelledby="contact-tab-md">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4"  style="text-align: left; padding: 2%;">
+                                    <img alt="logo" src="assets/images/l.png">
+                                </div>
+                                <div class="col-xs-8 col-sm-8"  style="text-align: right; padding: 2%;">
+                                    <h4>Congrats to <strong>2<sup>nd</sup> Prize</strong></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <strong><h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: xx-large;">TEAM BETTER SAAF THAN SORRY</h4><br></strong>
+                                    <h4><strong><mark>'PERSEVERING ESSENTIAL HEALTHCARE'</mark></strong></h4>
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: right;vertical-align: middle;">
+                                <div class="col-xs-12 col-sm-12">
+                                    <h5>CashPrize of <strong>Rs 20,000/-</strong></h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4" style="padding: 2%;">
+                                    <center>
+                                        <ul class="ch-grid1"  >
+                                            <li>
+                                                <div class="ch-item1 ch-img3">
+                                                    <div class="ch-info1">
+                                                        <center><br><br><h6>ANUSHKA<br>KATARIA</h6></center>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </center>
+                                </div>
+                                <div class="col-xs-12 col-sm-4" style="padding: 2%;">
+                                    <center>
+                                        <ul class="ch-grid1">
+                                            <li>
+                                                <div class="ch-item1 ch-img4">
+                                                    <div class="ch-info1">
+                                                        <center><br><br><h6>G<br>VENKATAKUPUSWAMY</h6></center>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </center>
+                                </div>
+                                <div class="col-xs-12 col-sm-4" style="padding: 2%;">
+                                    <center>
+                                        <ul class="ch-grid1">
+                                            <li>
+                                                <div class="ch-item1 ch-img5">
+                                                    <div class="ch-info1">
+                                                        <center><br><br><h6>HAMSHAVARDHINI<br>V</h6></center>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </center>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4" style="text-align: left;">
+                                    <br><br><h4 style="font-family: sans-serif;">PROJECT :</h4>
+                                </div>
+                                <div class="col-xs-8 col-sm-8" style="text-align: right;">
+                                    <br><br><h4 style="font-family: sans-serif;">Came up with the 'Pesevering Essential HealthCare' amidst the Covid-19 epidemic.</h4>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+              </div>
+         </div>
+         <br><br>
+
+
+
+
+
+
+
+
+
+
+
+     <div class="footer text-center spacer" id="contact">
+      	    <div class="row">
+                <div class="col-sm-4 wowload fadeInLeft"  style="padding: 2%;">
+                    <h4 class="text-center wowload fadeInUp">Contact Us</h4>
+                    <p>Anfas Nujum K - 8157925677<br>
+                    Faseeh Ahmed - 7034073143</p>
+                </div>
+                <div class="col-sm-4 wowload fadeInLeft"  style="padding: 2%;">
+                    <p><a href="mailto:tensorsofficial@gmail.com" target="_top">contact@tensors.in</a><br>Tensors © 2020</p>
+                </div>
+                <div class="col-sm-4 wowload fadeInLeft"  style="padding: 2%;">
+                    <p>
+                        <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i class="fa fa-instagram fa-3x fadeInDown"></i></a>&emsp;&emsp;
+                        <a href="https://www.facebook.com/tensorsofficial" id="facebook_button" target="_blank"><i class="fa fa-facebook fa-3x fadeInDown"></i></a>&emsp;&emsp;
+                        <a href="https://www.linkedin.com/company/53201198" id="facebook_button" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>&emsp;&emsp;                  
+                        <a href="mailto:tensorsofficial@gmail.com" id="facebook_button" target="_blank"><i class="fa fa-envelope fa-3x fadeInDown"></i></a>
+                    </p>
+                </div>
+             </div>
+      </div>
+
+
+
+
+        
+        
+    
+        
+
+         
+         
+        	
+                  
+         <style>
+            .ch-grid {
+                margin: 0px 0 0 0;
+                padding: 0;
+                list-style: none;
+                display: block;
+                text-align: center;
+                /*width: 100%;*/
+            }
+            
+            .ch-grid:after,
+            .ch-item:before {
+                content: '';
+                display: table;
+            }
+            
+            .ch-grid:after {
+                clear: both;
+            }
+            
+            .ch-grid li {
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                margin: 1px;
+            }
+            
+            .ch-item {
+                width: 100%;
+                height: 100%;
+                border-radius: 0%;
+                overflow: hidden;
+                position: relative;
+                cursor: default;
+                box-shadow: 
+                    inset 0 0 0 16px rgba(255,255,255,0.6),
+                    0 1px 2px rgba(0,0,0,0.1);
+                transition: all 0.4s ease-in-out;
+                display:block;
+                
+            }
+            
+            
+            
+            .ch-info {
+                position: absolute;
+                background: rgba(63,147,147, 0.8);
+                width: inherit;
+                height: inherit;
+                border-radius: 0%;
+                overflow: hidden;
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+                transform: scale(0);
+                
+            }
+            .ch-info h3 {
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 12px;
+                padding: 5px;;
+                height: 100%;
+                font-family: 'Open Sans', Arial, sans-serif;
+                text-shadow: 
+                    0 0 1px #fff, 
+                    0 1px 2px rgba(0,0,0,0.3);
+                    
+                    
+            }
+            .ch-info
+            {
+                text-align:center;
+            }
+            
+            .ch-item:hover {
+                box-shadow: 
+                    inset 0 0 0 1px rgba(255,255,255,0.1),
+                    0 1px 2px rgba(0,0,0,0.1);
+            }
+            
+            .ch-item:hover .ch-info {
+                transform: scale(1);
+                opacity: 1;
+            }
+            .ch-item:hover .ch-info p {
+                opacity: 1;
+            }
+            
+            .foot
+            {
+            font-size:14px;
+            }
+
+
+
+            .ch-grid1 {
+                margin: 0px 0 0 0;
+                padding: 0;
+                list-style: none;
+                display: block;
+                text-align: center;
+                /*width: 100%;*/
+            }
+            
+            .ch-grid1:after,
+            .ch-item1:before {
+                content: '';
+                display: table;
+            }
+            
+            .ch-grid1:after {
+                clear: both;
+            }
+            
+            .ch-grid1 li {
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                margin: 1px;
+            }
+            
+            .ch-item1 {
+                width: 100%;
+                height: 100%;
+                border-radius: 0%;
+                overflow: hidden;
+                position: relative;
+                cursor: default;
+                transition: all 0.4s ease-in-out;
+                display:block;
+                
+            }
+            
+            
+            
+            .ch-info1 {
+                position: absolute;
+                background: rgba(63,147,147, 0.8);
+                width: inherit;
+                height: inherit;
+                border-radius: 0%;
+                overflow: hidden;
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+                transform: scale(0);
+                
+            }
+            .ch-info1 h6 {
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 16px;
+                margin: 40px 0px;
+                padding: 5px;;
+                height: 100%;
+                font-family: 'Open Sans', Arial, sans-serif;
+                text-shadow: 
+                    0 0 1px #fff, 
+                    0 1px 2px rgba(0,0,0,0.3);
+                    
+                    
+            }
+            .ch-info1
+            {
+                text-align:center;
+            }
+            
+            .ch-item1:hover {
+                box-shadow: 
+                    inset 0 0 0 1px rgba(255,255,255,0.1),
+                    0 1px 2px rgba(0,0,0,0.1);
+            }
+            
+            .ch-item1:hover .ch-info1 {
+                transform: scale(1);
+                opacity: 1;
+            }
+            .ch-item1:hover .ch-info1 p {
+                opacity: 1;
+            }
+            
+            .ch-img1 { 
+                background-image: url(assets/images/decovresult/1prize3.jpg);
+            }
+            .ch-img2 { 
+                background-image: url(assets/images/decovresult/1prize4.jpg);
+            }
+            .ch-img3 { 
+                background-image: url(assets/images/decovresult/2prize7.jpg);
+            }
+            .ch-img4 { 
+                background-image: url(assets/images/decovresult/2prize8.jpg);
+            }
+            .ch-img5 { 
+                background-image: url(assets/images/decovresult/2prize9.jpg);
+            }
+
+
+            </style> 
+         
+      <a class="gototop hidden-xs" href="#home"><i class="fa fa-angle-up fa-3x"></i></a> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script src="assets/js/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script> <script src="assets/js/touchSwipe.min.js"></script> <script src="assets/js/respond.js"></script> <script src="assets/js/particles.min.js"></script> <script src="assets/js/jquery.waypoints.min.js"></script> <script src="assets/js/jquery-countTo.js"></script> <script src="assets/js/script.js"></script>
+
+   </body>
+</html>
