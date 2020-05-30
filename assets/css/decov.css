@@ -4,7 +4,7 @@
 
 #header{text-align: center; width: 100%;display: inline-block;margin: auto; } 
 #header > h3{color: #239F85; font-family: 'Exo 2', sans-serif;height: 50px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto;}
-#header > h1 > img{max-width: 600px;width: 90%;height: 150px;}
+#header > h1 > img{max-width: 600px;}
 
 #panel{background:rgba(22,160,133,0.7);}
 #panel > h1{text-align: center;font-size: x-large;}
