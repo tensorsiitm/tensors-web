@@ -6,10 +6,10 @@
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <meta content="The official website of TENSORS, a team by the Students' Forum of IIT Madras" name="description">
       <meta content="iit, iitm, iit madras, tensors, tensors exam, mock jee, iit mock test, iit sample, iit tensors, iitm tensors, jee advanced, tensorsci, tensor social campaign, iit social, iit social project" name="keywords">
-      <meta property="og : title" content="TENSORS_OFFICIAL">
-      <meta property="og : description" content="The official website of TENSORS, a team by the Students' Forum of IIT Madras">
-      <meta property="og : image" content="http://tensors.in/assets/images/sharelogo.png">
-      <meta property="og : url" content="http://tensors.in">
+      <meta property="og:title" content="TENSORS_OFFICIAL">
+      <meta property="og:description" content="The official website of TENSORS, a team by the Students' Forum of IIT Madras">
+      <meta property="og:image" content="http://tensors.in/assets/images/sharelogo.png">
+      <meta property="og:url" content="http://tensors.in">
       <title>TENSORS_OFFICIAL</title>
       <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
       <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
@@ -26,6 +26,7 @@
       <script src="assets/js/angular.min.js"></script>
       <script src="assets/js/angular-cookies.min.js"></script>
       <script src="assets/js/index.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
 
 
    </head>
@@ -62,9 +63,59 @@
          <h3>SAILING THROUGH NEW DIMENSIONS!</h3>
          <br><br><br><br>
 
-         <center>
+         <!--<center>
             <h4><a href="http://tensors.in/decov.html" target="_blank"><button class="answer_key wowload fadeInUp" style="width: 200px; height:35px;font-size: 0.85em;">DE-COV IDEATHON</button></a></h4></t>
-        </center>
+        </center>-->
+
+        
+      <!-- Button trigger modal -->
+<p style="font-size: xx-large;color: white; text-align: center;vertical-align: middle; font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><button type="button" data-toggle="modal" data-target="#fullHeightModalRight" style="width: 100%; height: 20px; font-family: 'Exo 2', sans-serif;height: 50px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto; background-color: #16A085;">
+   <strong><em>NATIONWIDE FREE JEE MOCK TEST<br><br></em></strong>
+ </button></p>
+ 
+ 
+ 
+ <!-- Full Height Modal Right -->
+ 
+ <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+   aria-hidden="true"  data-backdrop="false">
+ 
+   <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+   <div class="modal-dialog modal-full-height modal-right" role="document">
+ 
+     <div class="modal-content">
+        <div class="modal-body container-fluid">
+             <div class="row">
+                <div class="col-sm-9 col-xs-10" style="padding-left: 3%;padding-right: 5%;">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   <p><h4 class="modal-title" style="text-align:center;" id="myModalLabel"><center><img class="fadeInDown img-responsive" src="assets/images/logof.png" style="height: 100px;"></center></h4></p>
+                   <p><h4 class="fadeIn" id="animate" style="text-align:center; color:#00a087;" id="myModalLabel"><center>SAILING THROUGH NEW DIMENSIONS!</center></h4></p>
+                </div>
+             </div>  
+             <div class="row" style="background-color: rgba(22,160,133,0.7);">
+                <div class="col-sm-9 col-xs-10" style="padding-left: 3%;padding-right: 6%;">
+                   <br>
+                   <p style="padding-left: 3%;padding-right: 3%;text-align: justify;">
+                         Tensors 2020 is conducting a Nationwide FREE ONLINE JEE MOCK TEST on June 9th in association with GOTIIT from IIT Delhi. The questions papers are developed by expert students from IIT Madras. Gear up for JEE the right way. Exam:Online Computer Based Courses: Physics Chemistry Maths
+                   </p>
+                   <p style="padding-left: 3%;padding-right: 3%;text-align: center;">
+                         <strong>Sign Up at</strong>&emsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&emsp;<a href="https://gotiit.in/" target="_blank"><button class="answer_key fadeIn">&emsp;REGISTER&emsp;</button></a>
+                   </p>
+                   <p style="padding-left: 3%;padding-right: 3%;text-align: justify;">
+                         Follow our instagram for more updates and new about our mentorship program regarding everything from studying for the exam to applying to colleges
+                   </p>
+                   <p style="padding-left: 3%;padding-right: 3%;text-align: right;">
+                      <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i class="fa fa-instagram fa-2x fadeInDown"></i></a>
+ 
+                   </p>
+                </div>
+             </div>
+        </div>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Full Height Modal Right -->
 
          
          
@@ -269,9 +320,11 @@
       </div>
 
 
+
+
       <!-- Decov Modal -->
-      <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-lg" role="document">
+      <!--<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-full-height modal-right" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -380,12 +433,12 @@
         
       <div class="footer text-center spacer" id="contact">
       	<div class="row">
-            <div class="col-sm-6 wowload fadeInLeft"  style="padding: 2%;">
+            <div class="col-sm-6 wowload fadeIn"  style="padding: 2%;">
                <h4 class="text-center wowload fadeInUp">Contact Us</h4>
                <p>Anfas Nujum K - 8157925677<br>
                Faseeh Ahmed - 7034073143</p>
             </div>
-            <div class="col-sm-6 wowload fadeInLeft"  style="padding: 2%;">
+            <div class="col-sm-6 wowload fadeIn"  style="padding: 2%;">
                <p>
                   <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i class="fa fa-instagram fa-3x fadeInDown"></i></a>&emsp;&emsp;
                   <a href="https://www.facebook.com/tensorsofficial" id="facebook_button" target="_blank"><i class="fa fa-facebook fa-3x fadeInDown"></i></a>&emsp;&emsp;
@@ -393,12 +446,12 @@
                   <a href="mailto:tensorsofficial@gmail.com" id="facebook_button" target="_blank"><i class="fa fa-envelope fa-3x fadeInDown"></i></a>
                </p>
             </div>
-            <div class="col-sm-12 wowload fadeInLeft"  style="text-align: center; padding: 2%;">
+            <div class="col-sm-12 wowload fadeIn"  style="text-align: center; padding: 2%;">
                <p><a href="mailto:tensorsofficial@gmail.com" target="_top">contact@tensors.in</a><br>Tensors © 2020</p>
             </div>
          </div>
       </div>
-      <a class="gototop hidden-xs" href="#home"><i class="fa fa-angle-up fa-3x"></i></a> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script src="assets/js/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script> <script src="assets/js/touchSwipe.min.js"></script> <script src="assets/js/respond.js"></script> <script src="assets/js/particles.min.js"></script> <script src="assets/js/jquery.waypoints.min.js"></script> <script src="assets/js/jquery-countTo.js"></script> <script src="assets/js/script.js"></script>
+      <a class="gototop hidden-xs" href="#home"><i class="fa fa-angle-up fa-3x"></i></a><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script src="assets/js/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script> <script src="assets/js/touchSwipe.min.js"></script> <script src="assets/js/respond.js"></script> <script src="assets/js/particles.min.js"></script> <script src="assets/js/jquery.waypoints.min.js"></script> <script src="assets/js/jquery-countTo.js"></script> <script src="assets/js/script.js"></script>
 
    </body>
 </html>
