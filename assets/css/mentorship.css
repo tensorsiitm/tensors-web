@@ -1,0 +1,72 @@
+#topbar{height: 4ex;vertical-align: middle;}
+#facebook_button > i{color: rgba(22,160,133,0.7);padding: 2px;}
+#facebook_button > i:hover{color: hotpink;}
+
+#header{text-align: center; width: 100%;display: inline-block;margin: auto; } 
+#header > h3{color: #239F85; font-family: 'Exo 2', sans-serif;height: 50px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto;}
+#header > h1 > img{max-width: 600px;}
+
+#qustns{background-color: #239F85;}
+
+
+
+
+
+
+/*social icons*/
+.social-icons ul {
+    padding: 0;
+    margin: 0; }
+  
+  .text-center.social-icons ul {
+    display: inline-block; }
+  
+  .social-icons li {
+    float: right;
+    list-style: none; }
+  
+  .social-icons li a {
+    float: left;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 4px 4px 0;
+    border-radius: 4px;
+    border: 0;
+    background: transparent;
+    color: rgba(22,160,133,0.7);
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  
+  .dark .social-icons li a {
+    color: #eeeeee; }
+  
+  .social-icons.social-icons-colored a,
+  .social-icons.social-icons-colored-hover a:hover {
+    color: #fff;
+    border: 0; }
+  
+  
+  
+  .social-icons.social-icons-colored .social-facebook a,
+  .social-icons.social-icons-colored-hover .social-facebook a:hover {
+    background-color: #5d82d1; }
+  
+  .social-icons.social-icons-colored .social-twitter a,
+  .social-icons.social-icons-colored-hover .social-linkedin a:hover {
+    background-color: #faa33d; }
+  
+  
+  .social-icons.social-icons-colored .social-youtube a,
+  .social-icons.social-icons-colored-hover .social-instagram a:hover {
+    background-color: rgb(243, 99, 224); }
+  
+  .social-icons.social-icons-colored .social-instagram a,
+  .social-icons.social-icons-colored-hover .social-mail a:hover {
+    background-color: #ef4e41; }
+    /*-----*/
+  
