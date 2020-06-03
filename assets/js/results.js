@@ -7,7 +7,8 @@ angular.module('resultsApp', ['ngCookies'])
 
 
   .controller('resultsController', function($scope, $http, $timeout) {
-	  	var code = localStorage.getItem('code');
+// 	  	var code = localStorage.getItem('code');
+		var code = "CLT1"
 	  	$scope.resultType = localStorage.getItem('type'); 
 		var dataRef = firebase.database().ref("/"+code);
 
