@@ -1,339 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-      <meta content="The official website of TENSORS, a team by the Students' Forum of IIT Madras" name="description">
-      <meta content="iit, iitm, iit madras, tensors, tensors exam, mock jee, iit mock test, iit sample, iit tensors, iitm tensors, jee advanced, tensorsci, tensor social campaign, iit social, iit social project, free jee mock test, nation wide mock test, gotiit" name="keywords">
-      <meta property="og:title" content="TENSORS_OFFICIAL">
-      <meta property="og:description" content="The official website of TENSORS, a team by the Students' Forum of IIT Madras">
-      <meta property="og:image" content="http://tensors.in/assets/images/sharelogo.png">
-      <meta property="og:url" content="http://tensors.in">
-      <title>Tensors_official</title>
-      <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
-      <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-      <link href="assets/css/animate.css" rel="stylesheet">
-      <link href="assets/css/set.css" rel="stylesheet">
-      <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-      <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
-      <link href="assets/css/style.css" rel="stylesheet">
-      <script src="assets/js/angular.min.js"></script>
-      <script src="assets/js/angular-cookies.min.js"></script>
-      <script src="assets/js/index.js"></script>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+<head>
+   <meta charset="UTF-8">
+   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   <meta content="The official website of TENSORS, a team by the Students' Forum of IIT Madras" name="description">
+   <meta
+      content="iit, iitm, iit madras, tensors, tensors exam, mock jee, iit mock test, iit sample, iit tensors, iitm tensors, jee advanced, tensorsci, tensor social campaign, iit social, iit social project, free jee mock test, nation wide mock test, gotiit"
+      name="keywords">
+   <meta property="og:title" content="TENSORS_OFFICIAL">
+   <meta property="og:description"
+      content="The official website of TENSORS, a team by the Students' Forum of IIT Madras">
+   <meta property="og:image" content="http://tensors.in/assets/images/sharelogo.png">
+   <meta property="og:url" content="http://tensors.in">
+   <title>Tensors_official</title>
+   <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-
-   </head>
-   <body ng-app="mainApp" ng-controller="mainController">
-      <script>(function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r; i[r]=i[r] || function(){(i[r].q=i[r].q || []).push(arguments)}, i[r].l=1 * new Date(); a=s.createElement(o), m=s.getElementsByTagName(o)[0]; a.async=1; a.src=g; m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-86288857-1', 'auto'); ga('send', 'pageview');</script>
-
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/css/animate.css" rel="stylesheet">
+   <link href="assets/css/set.css" rel="stylesheet">
+   <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+   <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
+   <link href="assets/css/style.css" rel="stylesheet">
+   <script src="assets/js/angular.min.js"></script>
+   <script src="assets/js/angular-cookies.min.js"></script>
+   <script src="assets/js/index.js"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
 
 
+</head>
 
-      <div id="particles-js"></div>
-      <div class="navbar-wrapper">
-         <div class="container">
-            <div class="navbar navbar-inverse navbar-fixed-top" id="top-nav" role="navigation">
-               <div class="container">
-                  <div class="navbar-header"> <a class="navbar-brand" href="#home"><img alt="logo" src="assets/images/l.png"> </a> <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" id="nav_button" type="button" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button> </div>
-                  <div class="navbar-collapse collapse">
-                     <ul class="nav navbar-nav navbar-right scroll">
-                        <li class="active"><a href="#home">Home</a> </li>
-                        <li><a href="#about">About</a> </li>
-                        <li class="dropdown">
-                           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">tensors<span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="#partners">Testimonials</a> </li> 
-                              <li><a href="#faq">FAQ</a></li>
-                           </ul>
-                        </li> 
-                        <li><a href="http://tensors.in/mentorship.html" onClick="window.location='http://tensors.in/mentorship.html'" target="_blank">Mentorship</a> </li>
-                        <li><a href="http://tensors.in/decov.html" onClick="window.location='http://tensors.in/decov.html'" target="_blank">De-Cov Ideathon</a> </li>
-                       
-                        <li><a href="#contact">Contact Us</a> </li>
+<body ng-app="mainApp" ng-controller="mainController">
+   <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-86288857-1', 'auto'); ga('send', 'pageview');</script>
 
-                     </ul>
+
+
+
+   <div id="particles-js"></div>
+   <div class="navbar-wrapper">
+      <div class="container">
+         <div class="navbar navbar-inverse navbar-fixed-top" id="top-nav" role="navigation">
+            <div class="container">
+               <div class="navbar-header"> <a class="navbar-brand" href="#home"><img alt="logo"
+                        src="assets/images/l.png"> </a> <button class="navbar-toggle collapsed"
+                     data-target=".navbar-collapse" data-toggle="collapse" id="nav_button" type="button"
+                     aria-expanded="false"><span class="sr-only">Toggle navigation</span><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
+               </div>
+               <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right scroll">
+                     <li class="active"><a href="#home">Home</a> </li>
+                     <li><a href="#about">About</a> </li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">tensors<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#partners">Testimonials</a> </li>
+                           <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="http://tensors.in/mentorship.html"
+                           onClick="window.location='http://tensors.in/mentorship.html'" target="_blank">Mentorship</a>
+                     </li>
+                     <li><a href="http://tensors.in/decov.html" onClick="window.location='http://tensors.in/decov.html'"
+                           target="_blank">De-Cov Ideathon</a> </li>
+
+                     <li><a href="#contact">Contact Us</a> </li>
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="home">
+      <h1 class="animated fadeIn"><img src="assets/images/logof.png"></h1>
+      <br>
+      <h3>SAILING THROUGH NEW DIMENSIONS!</h3>
+      <br><br><br><br>
+
+
+
+      <!--<center>
+            <h4><a href="http://tensors.in/decov.html" target="_blank"><button class="answer_key wowload fadeInUp" style="width: 200px; height:35px;font-size: 0.85em;">DE-COV IDEATHON</button></a></h4></t>
+        </center>-->
+
+
+      <!-- Button trigger modal -->
+      <p
+         style="font-size: xx-large;color: white; text-align: center;vertical-align: middle; font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+         <button type="button" data-toggle="modal" data-target="#fullHeightModalRight"
+            style="width: 100%; height: 20px; font-family: 'Exo 2', sans-serif;height: 50px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto; background-color: #16A085;">
+            <strong>NATION-WIDE FREE JEE MOCK TEST<br><br></strong>
+         </button></p>
+
+
+
+
+      <!-- Full Height Modal Right -->
+
+      <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true" data-backdrop="false">
+
+         <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+         <div class="modal-dialog modal-full-height modal-right" role="document">
+
+            <div class="modal-content">
+               <div class="modal-body container-fluid">
+                  <div class="row">
+                     <div class="col-sm-9 col-xs-10" style="padding-left: 3%;padding-right: 6%;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                              aria-hidden="true">&times;</span></button>
+                        <p>
+                        <h4 class="modal-title" style="text-align:center;" id="myModalLabel">
+                           <center><img class="fadeInDown img-responsive" src="assets/images/logof.png"
+                                 style="height: 70px;"></center>
+                        </h4>
+                        </p>
+                        <p>
+                        <h4 class="fadeIn"
+                           style="text-align:center;color: #239F85; font-family: 'Exo 2', sans-serif;height: 30px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 1s steps(50, end);margin: -4vmin auto;"
+                           id="myModalLabel">
+                           <center>SAILING THROUGH NEW DIMENSIONS!</center>
+                        </h4>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="row" style="background-color: rgba(22,160,133,0.7);">
+                     <div class="col-sm-9 col-xs-10" style="padding-left: 3%;padding-right: 6%;">
+                        <br>
+                        <p style="padding-left: 3%;padding-right: 3%;text-align: justify;">
+                           <b>tensors</b> is a Nationwide <b>FREE ONLINE JEE MOCK TEST</b> on <b>June 9th</b>, conducted
+                           by <b>TENSORS</b> in association with <b>GOTIIT</b>.<br>The questions papers are developed by
+                           expert students from IIT Madras. <br>Gear up for JEE the right way. <br><b>Exam</b>:Online
+                           Computer Based<br> <b>Courses</b>: Physics Chemistry Maths
+                        </p>
+                        <p style="padding-left: 3%;padding-right: 3%;text-align: center;">
+                           <strong>Sign Up at</strong>&emsp;<span class="glyphicon glyphicon-chevron-right"
+                              aria-hidden="true"></span>&emsp;<a href="https://gotiit.in/" target="_blank"><button
+                                 class="answer_key fadeIn">&emsp;REGISTER&emsp;</button></a>
+                        </p>
+                        <p style="padding-left: 3%;padding-right: 3%;text-align: left;">
+                           Follow our instagram for more updates about our new, launching soon, <b>Mentorship
+                              Program</b>.<br>Right from <b>JEE Preps</b> till <b>Admission</b>.
+                        </p>
+                        <p style="padding-left: 3%;padding-right: 3%;text-align: right;">
+                           <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i
+                                 class="fa fa-instagram fa-2x fadeInDown"></i></a>
+
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <div id="home">
-         <h1 class="animated fadeIn"><img src="assets/images/logof.png"></h1>
-         <br>
-         <h3>SAILING THROUGH NEW DIMENSIONS!</h3>
-         <br><br><br><br>
+
+      <!-- Full Height Modal Right -->
 
 
 
-         <!--<center>
-            <h4><a href="http://tensors.in/decov.html" target="_blank"><button class="answer_key wowload fadeInUp" style="width: 200px; height:35px;font-size: 0.85em;">DE-COV IDEATHON</button></a></h4></t>
-        </center>-->
-
-        
-      <!-- Button trigger modal -->
-<p style="font-size: xx-large;color: white; text-align: center;vertical-align: middle; font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><button type="button" data-toggle="modal" data-target="#fullHeightModalRight" style="width: 100%; height: 20px; font-family: 'Exo 2', sans-serif;height: 50px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto; background-color: #16A085;">
-   <strong>NATIONWIDE FREE JEE MOCK TEST<br><br></strong>
- </button></p>
 
 
- 
- 
- <!-- Full Height Modal Right -->
- 
- <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-   aria-hidden="true"  data-backdrop="false">
- 
-   <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-   <div class="modal-dialog modal-full-height modal-right" role="document">
- 
-     <div class="modal-content">
-        <div class="modal-body container-fluid">
-             <div class="row">
-                <div class="col-sm-9 col-xs-10" style="padding-left: 3%;padding-right: 6%;">
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                   <p><h4 class="modal-title" style="text-align:center;" id="myModalLabel"><center><img class="fadeInDown img-responsive" src="assets/images/logof.png" style="height: 70px;"></center></h4></p>
-                   <p><h4 class="fadeIn" style="text-align:center;color: #239F85; font-family: 'Exo 2', sans-serif;height: 30px; font-size: medium;overflow: hidden;white-space: nowrap;animation: typing 1s steps(50, end);margin: -4vmin auto;" id="myModalLabel"><center>SAILING THROUGH NEW DIMENSIONS!</center></h4></p>
-                </div>
-             </div>  
-             <div class="row" style="background-color: rgba(22,160,133,0.7);">
-                <div class="col-sm-9 col-xs-10" style="padding-left: 3%;padding-right: 6%;">
-                   <br>
-                   <p style="padding-left: 3%;padding-right: 3%;text-align: justify;">
-                         <b>tensors</b> is a Nationwide <b>FREE ONLINE JEE MOCK TEST</b> on <b>June 9th</b>, conducted by <b>TENSORS</b> in association with <b>GOTIIT</b>.<br>The questions papers are developed by expert students from IIT Madras. <br>Gear up for JEE the right way. <br><b>Exam</b>:Online Computer Based<br> <b>Courses</b>: Physics Chemistry Maths
-                   </p>
-                   <p style="padding-left: 3%;padding-right: 3%;text-align: center;">
-                         <strong>Sign Up at</strong>&emsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&emsp;<a href="https://gotiit.in/" target="_blank"><button class="answer_key fadeIn">&emsp;REGISTER&emsp;</button></a>
-                   </p>
-                   <p style="padding-left: 3%;padding-right: 3%;text-align: left;">
-                         Follow our instagram for more updates about our new, launching soon, <b>Mentorship Program</b>.<br>Right from <b>JEE Preps</b> till <b>Admission</b>.
-                   </p>
-                   <p style="padding-left: 3%;padding-right: 3%;text-align: right;">
-                      <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i class="fa fa-instagram fa-2x fadeInDown"></i></a>
- 
-                   </p>
-                </div>
-             </div>
-        </div>
-     </div>
-   </div>
- </div>
- 
- <!-- Full Height Modal Right -->
 
-         
-         
-        	
-                  
-         
-         <!--<h4><a href="http://tensors.in/ResultMAINS.html" target="_blank"><button class="answer_key wowload fadeInUp" style=" width: 190px; height:35px;font-size: 0.75em";>JEE MAINS RANK</button></a> 
+      <!--<h4><a href="http://tensors.in/ResultMAINS.html" target="_blank"><button class="answer_key wowload fadeInUp" style=" width: 190px; height:35px;font-size: 0.75em";>JEE MAINS RANK</button></a> 
          <a href="http://tensors.in/ResultADV.html" target="_blank"><button class="answer_key wowload fadeInUp" style=" width: 190px; height:35px;font-size: 0.75em;">JEE ADVANCED RANK</button></a></h4>-->
-         <!--<h4><a href="assets/pdf/2020/De-Cov Ideathon.pdf" target="_blank"><button class="answer_key wowload fadeInUp" style=" width: 190px; height:35px;font-size: 0.75em";>PROBLEM STATEMENT</button></a> 
+      <!--<h4><a href="assets/pdf/2020/De-Cov Ideathon.pdf" target="_blank"><button class="answer_key wowload fadeInUp" style=" width: 190px; height:35px;font-size: 0.75em";>PROBLEM STATEMENT</button></a> 
          <a href="https://d2c.pw/kfweCd" target="_blank"><button class="answer_key wowload fadeInUp" style=" width: 190px; height:35px;font-size: 0.75em;">REGISTRATION</button></a></h4>
         
          </div>
          <div style ="text-align: center; font-size: 30px">
          <a href="#about"><i aria-hidden="true" class="fa fa-angle-down"></i></a>-->
+   </div>
+   <div class="container spacer about" id="about">
+      <h2 class="text-center wowload fadeInUp">About Us</h2>
+      <div class="row">
+         <div class="col-sm-6 wowload fadeInLeft">
+            <p>Tensors is a social initiative aimed to tackle the problems existing in our society today. Our projects
+               focus on the root causes and provides innovative solutions. We wish to be the change. Our Projects are
+               funded by <b>tensors</b>. Our recent event <b>De-Cov Ideathon</b>, in association with Indian Medical
+               Association,Kerala provided innovative solutions to the Pandemic Crisis. </p>
          </div>
-      <div class="container spacer about" id="about">
-         <h2 class="text-center wowload fadeInUp">About Us</h2>
-         <div class="row">
-            <div class="col-sm-6 wowload fadeInLeft">
-               <p>Tensors is a social initiative aimed to tackle the problems existing in our society today. Our projects focus on the root causes and provides innovative solutions. We wish to be the change. Our Projects are funded by <b>tensors</b>. Our recent event <b>De-Cov Ideathon</b>, in association with Indian Medical  Association,Kerala provided innovative solutions to the Pandemic Crisis. </p>
-            </div>
-            <div class="col-sm-6 wowload fadeInRight">
-               <p>We are a team of multidisciplinary and highly motivated students with a common dream of encouraging innovation for nation building. To create a platform for the brightest minds of the country to contribute towards Nation-building. We are currently working out of IIT Madras. Reach out to us, if your views allign with us!</p>
-            </div>
-         </div>
-         <div class="services">
-            <h3 class="text-center wowload fadeInUp">Features</h3>
-            <ul class="row text-center list-inline">
-               <li class="wowload fadeIn"><span><i class="fa fa-graduation-cap wowload fadeInUp"></i><b><strong>EXPERIENCE</strong></b></span> </li>
-               <li class="wowload fadeIn"><span><i class="fa fa-camera wowload fadeInUp"></i><b><strong>EXPOSURE</strong></b></span> </li>
-               <li class="wowload fadeIn"><span><i class="fa fa-heart wowload fadeInUp"><br></i><b><strong>SOCIAL PROJECTS</strong></b></span> </li>
-               <li class="wowload fadeIn"><span><i class="fa fa-street-view wowload fadeInUp"></i><b><strong>GUIDANCE</strong></b></span> </li>
-               <li class="wowload fadeIn"><span><i class="fa fa-lightbulb-o wowload fadeInUp"></i><b><strong>REVELATION</strong></b></span> </li>
-            </ul>
+         <div class="col-sm-6 wowload fadeInRight">
+            <p>We are a team of multidisciplinary and highly motivated students with a common dream of encouraging
+               innovation for nation building. To create a platform for the brightest minds of the country to contribute
+               towards Nation-building. We are currently working out of IIT Madras. Reach out to us, if your views
+               allign with us!</p>
          </div>
       </div>
+      <div class="services">
+         <h3 class="text-center wowload fadeInUp">Features</h3>
+         <ul class="row text-center list-inline">
+            <li class="wowload fadeIn"><span><i
+                     class="fa fa-graduation-cap wowload fadeInUp"></i><b><strong>EXPERIENCE</strong></b></span> </li>
+            <li class="wowload fadeIn"><span><i
+                     class="fa fa-camera wowload fadeInUp"></i><b><strong>EXPOSURE</strong></b></span> </li>
+            <li class="wowload fadeIn"><span><i class="fa fa-heart wowload fadeInUp"><br></i><b><strong>SOCIAL
+                        PROJECTS</strong></b></span> </li>
+            <li class="wowload fadeIn"><span><i
+                     class="fa fa-street-view wowload fadeInUp"></i><b><strong>GUIDANCE</strong></b></span> </li>
+            <li class="wowload fadeIn"><span><i
+                     class="fa fa-lightbulb-o wowload fadeInUp"></i><b><strong>REVELATION</strong></b></span> </li>
+         </ul>
+      </div>
+   </div>
 
-      <div class="container spacer" id="partners">
-         <h2 class="text-center wowload fadeInUp">How Tensors changed their Lives!</h2>
-         <div class="clearfix">
-            <div class="col-sm-6">
-               <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel" id="carousel-testimonials1">
-                  <div class="carousel-inner">
-                     <div class=" active animated bounceInRight row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/shafil.jpg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>By Tensors, I was able to identify the chinks in my JEE preparation, literally. Tensors is so balanced inspite of being very detailed, that I got the true feel of writing the JEE exams. It developed my confidence and kept the tempo going in the last stages of preparation.</p>
-                           <span>Shafil Maheen - <b>IISC Bangalore</b></span>
-                        </div>
+   <div class="container spacer" id="partners">
+      <h2 class="text-center wowload fadeInUp">How Tensors changed their Lives!</h2>
+      <div class="clearfix">
+         <div class="col-sm-6">
+            <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel"
+               id="carousel-testimonials1">
+               <div class="carousel-inner">
+                  <div class=" active animated bounceInRight row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/shafil.jpg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>By Tensors, I was able to identify the chinks in my JEE preparation, literally. Tensors is so
+                           balanced inspite of being very detailed, that I got the true feel of writing the JEE exams.
+                           It developed my confidence and kept the tempo going in the last stages of preparation.</p>
+                        <span>Shafil Maheen - <b>IISC Bangalore</b></span>
                      </div>
-                     <br><br>
-                     <div class=" animated bounceInRight row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/anand.jpg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>There has been a lot of hype built up around IIT JEE, particularly that it is something only extraordinary and brilliant people can qualify, but out of my experience, I can assure you that there is little truth in the statement.</p>
-                           <span>Anand George - <b>IIT Madras</b></span>
+                  </div>
+                  <br><br>
+                  <div class=" animated bounceInRight row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/anand.jpg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>There has been a lot of hype built up around IIT JEE, particularly that it is something only
+                           extraordinary and brilliant people can qualify, but out of my experience, I can assure you
+                           that there is little truth in the statement.</p>
+                        <span>Anand George - <b>IIT Madras</b></span>
 
-                        </div>
                      </div>
-                     <br><br>
                   </div>
-                  <ol class="carousel-indicators">
-                     <li class="active" data-slide-to="0" data-target="#carousel-testimonials1"></li>
-                     <li data-slide-to="1" data-target="#carousel-testimonials1"></li>
-                  </ol>
+                  <br><br>
                </div>
-            </div>
-            <div class="col-sm-6">
-               <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel" id="carousel-testimonials2">
-                  <div class="carousel-inner">
-                     <div class=" active animated bounceInLeft row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/denin.jpeg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>The Tensors exam played a vital part in my JEE preparation. It enabled me to estimate my potential and therefore helped me know my limits and push them. It gave me an insight as to what topics I was weak in, and to mend my ways to focus more on my weakness.</p>
-                           <span>Denin Jose - <b>IIT Madras</b></span>
-                        </div>
-                     </div>
-                     <br><br>
-                     <div class=" animated bounceInLeft row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/aghin.jpeg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>I used to be an average student, that was when I got introduced to tensors through my friends. It has been a great experience facing the questions, testing the analytical and practical applications simultaneously.</p>
-                           <span>Aghin Shah Alin - <b>IIT Madras</b></span>
-                        </div>
-                     </div>
-                     <br><br>
-                  </div>
-                  <ol class="carousel-indicators">
-                     <li class="active" data-slide-to="0" data-target="#carousel-testimonials2"></li>
-                     <li data-slide-to="1" data-target="#carousel-testimonials2"></li>
-                  </ol>
-               </div>
-            </div>
-            <div class="col-sm-6">
-               <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel" id="carousel-testimonials3">
-                  <div class="carousel-inner">
-                     <div class=" active animated bounceInRight row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/leon.jpeg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>Believe me when I say that Tensors is the best mock exam for JEE aspirants. It gives us a clear cut explanation about how the original exam would be. Through the Tensors exam I was able to judge what would be my stand amoungst others in the state in jee exams.</p>
-                           <span>Leon Jose - <b>IIT Madras</b></span>
-                        </div>
-                     </div>
-                     <br><br>
-                     <div class=" animated bounceInRight row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/amal_mathew.jpeg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>When you take a mock test you expect it to live up to the standards of the original. Tensors, probably because it was made by IITians with an intent to kill, broke that standard. Solving such a paper boosted my confidence due to the simple fact that IIT JEE was going to be easier.</p>
-                           <span>Amal Mathew - <b>IIT Bombay</b></span>
-                        </div>
-                     </div>
-                     <br><br>
-                  </div>
-                  <ol class="carousel-indicators">
-                     <li class="active" data-slide-to="0" data-target="#carousel-testimonials3"></li>
-                     <li data-slide-to="1" data-target="#carousel-testimonials3"></li>
-                  </ol>
-               </div>
-            </div>
-            <div class="col-sm-6">
-               <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel" id="carousel-testimonials4">
-                  <div class="carousel-inner">
-                     <div class=" active animated bounceInLeft row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/abhirami.jpeg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>Tensors is undoubtedly the best mock test available for JEE aspirants, hands down! The test helped me to identify the gaps in my preparation and start rectifying them. Tensors pointed out my weak topics while helping me understand the true benefit of efficient time management.</p>
-                           <span>Abhirami Elizbeth Prathap - <b>IIT Madras</b></span>
-                        </div>
-                     </div>
-                     <br><br>
-                     <div class=" animated bounceInLeft row">
-                        <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive" src="assets/images/team/irfan.jpeg" width="100"> </div>
-                        <div class="col-xs-9">
-                           <p>Tensors is modelled to encourage a more conceptual analysis of each problem. This helped me tremendously as I was finding a shortage of these problems. The test also introduced me to my peers who gave me tips on attempting certain types of questions.</p>
-                           <span>Mohammed Irfan Thayyil - <b>IIT Madras</b></span>
-                        </div>
-                     </div>
-                     <br><br>
-                  </div>
-                  <ol class="carousel-indicators">
-                     <li class="active" data-slide-to="0" data-target="#carousel-testimonials4"></li>
-                     <li data-slide-to="1" data-target="#carousel-testimonials4"></li>
-                  </ol>
-               </div>
+               <ol class="carousel-indicators">
+                  <li class="active" data-slide-to="0" data-target="#carousel-testimonials1"></li>
+                  <li data-slide-to="1" data-target="#carousel-testimonials1"></li>
+               </ol>
             </div>
          </div>
-      </div>
-
-      <div class="highlight-info" id="highlight-info">
-         <div class="overlay spacer">
-            <div class="container">
-               <div class="row text-center">
-                  <div class="col-sm-3 col-xs-12">
-                     <div class="counter wowload fadeInDown">
-                        <div class="stat"><span class="timer" data-from="0" data-to="10" id="counter1">10</span>+</div>
-                        <div class="stat-info">zones</div>
+         <div class="col-sm-6">
+            <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel"
+               id="carousel-testimonials2">
+               <div class="carousel-inner">
+                  <div class=" active animated bounceInLeft row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/denin.jpeg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>The Tensors exam played a vital part in my JEE preparation. It enabled me to estimate my
+                           potential and therefore helped me know my limits and push them. It gave me an insight as to
+                           what topics I was weak in, and to mend my ways to focus more on my weakness.</p>
+                        <span>Denin Jose - <b>IIT Madras</b></span>
                      </div>
                   </div>
-                  <div class="col-sm-3 col-xs-12">
-                     <div class="counter wowload fadeInDown" style="-webkit-animation-delay: .5s; animation-delay: .5s;">
-                        <div class="stat"><span class="timer" data-from="0" data-to="20" id="counter2">20</span>+</div>
-                        <div class="stat-info">centres</div>
+                  <br><br>
+                  <div class=" animated bounceInLeft row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/aghin.jpeg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>I used to be an average student, that was when I got introduced to tensors through my
+                           friends. It has been a great experience facing the questions, testing the analytical and
+                           practical applications simultaneously.</p>
+                        <span>Aghin Shah Alin - <b>IIT Madras</b></span>
                      </div>
                   </div>
-                  <div class="col-sm-3 col-xs-12">
-                     <div class="counter wowload fadeInDown" style="-webkit-animation-delay: 1s; animation-delay: 1s;">
-                        <div class="stat"><span class="timer" data-from="0" data-to="50" id="counter3">50</span>+</div>
-                        <div class="stat-info">coordinators</div>
-                     </div>
-                  </div>
-                  <div class="col-sm-3 col-xs-12">
-                     <div class="counter wowload fadeInDown" style="-webkit-animation-delay: 1.5s; animation-delay: 1.5s;">
-                        <div class="stat"><span class="timer" data-from="0" data-to="15000" id="counter4">15000</span>+</div>
-                        <div class="stat-info">attendees</div>
-                     </div>
-                  </div>
+                  <br><br>
                </div>
+               <ol class="carousel-indicators">
+                  <li class="active" data-slide-to="0" data-target="#carousel-testimonials2"></li>
+                  <li data-slide-to="1" data-target="#carousel-testimonials2"></li>
+               </ol>
             </div>
          </div>
-      </div>
-
-      <div style="padding: 5%;" class="container spacer faq" id="faq">
-         <h2 class="text-center wowload fadeInUp">Frequently Asked Questions</h2>
-         <div class="row">
-            <div class="col-sm-6 wowload fadeInLeft">
-               <h4><i class="fa fa-question"></i> Why Tensors?</h4>
-               <p>The paper setters are IITians who have already written and have fared well in the JEE. Most of the questions are think out of the box/ unconventional but keeping with JEE standards, the kind of problems you might face in actual JEE exam. Very few questions are directly taken out of study materials. You can also interact with IITians. Their personal experience during preparation might prove invaluable for your own studies. There is also the added advantage of competing with JEE aspirants all over Kerala and Tamil Nadu(Chennai, Coimbatore, Salem).</p>
+         <div class="col-sm-6">
+            <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel"
+               id="carousel-testimonials3">
+               <div class="carousel-inner">
+                  <div class=" active animated bounceInRight row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/leon.jpeg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>Believe me when I say that Tensors is the best mock exam for JEE aspirants. It gives us a
+                           clear cut explanation about how the original exam would be. Through the Tensors exam I was
+                           able to judge what would be my stand amoungst others in the state in jee exams.</p>
+                        <span>Leon Jose - <b>IIT Madras</b></span>
+                     </div>
+                  </div>
+                  <br><br>
+                  <div class=" animated bounceInRight row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/amal_mathew.jpeg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>When you take a mock test you expect it to live up to the standards of the original. Tensors,
+                           probably because it was made by IITians with an intent to kill, broke that standard. Solving
+                           such a paper boosted my confidence due to the simple fact that IIT JEE was going to be
+                           easier.</p>
+                        <span>Amal Mathew - <b>IIT Bombay</b></span>
+                     </div>
+                  </div>
+                  <br><br>
+               </div>
+               <ol class="carousel-indicators">
+                  <li class="active" data-slide-to="0" data-target="#carousel-testimonials3"></li>
+                  <li data-slide-to="1" data-target="#carousel-testimonials3"></li>
+               </ol>
             </div>
-            <div class="col-sm-6 wowload fadeInRight">
-               <h4><i class="fa fa-question"></i> I haven’t finished my preparation, should I attempt?</h4>
-               <p>We encourage even the +1 students to attempt the exam. They may not understand some of the topics in the test but will atleast get a flavour of time management needed during exam. Also the interactive session may be more useful to them because they have more time for improvement. Plus two students who haven’t yet covered the entire syllabus shouldn’t shy away from the test either. Perform the test with what you have already studied and improve on your weakpoints.</p>
-            </div>
-            <div class="col-sm-6 wowload fadeInLeft">
-               <h4><i class="fa fa-question"></i> Who can apply?</h4>
-               <p>Any science stream student thinking of appearing for JEE 2019 or JEE 2020 can and should attempt Tensors, although it will be more beneficial to the former.</p>
-            </div>
-            <div class="col-sm-6 wowload fadeInRight">
-               <h4><i class="fa fa-question"></i> I’m planning on attempting JEE Mains and undecided about JEE Advanced.</h4>
-               <p>As stated above Tensors paper is prepared by IITians. The questions are unique and the interactive will probably be more useful for you than any single lecture hour!!! Also in a few years, when you come into IITM you might have to conduct the test yourself. That time you can’t ask others to write the test if you haven’t attempted the test yourself!!!</p>
+         </div>
+         <div class="col-sm-6">
+            <div class="carousel slide testimonails wowload fadeInRight" data-pause="false" data-ride="carousel"
+               id="carousel-testimonials4">
+               <div class="carousel-inner">
+                  <div class=" active animated bounceInLeft row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/abhirami.jpeg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>Tensors is undoubtedly the best mock test available for JEE aspirants, hands down! The test
+                           helped me to identify the gaps in my preparation and start rectifying them. Tensors pointed
+                           out my weak topics while helping me understand the true benefit of efficient time management.
+                        </p>
+                        <span>Abhirami Elizbeth Prathap - <b>IIT Madras</b></span>
+                     </div>
+                  </div>
+                  <br><br>
+                  <div class=" animated bounceInLeft row">
+                     <div class="animated slideInLeft col-xs-3"><img alt="portfolio" class="img-circle img-responsive"
+                           src="assets/images/team/irfan.jpeg" width="100"> </div>
+                     <div class="col-xs-9">
+                        <p>Tensors is modelled to encourage a more conceptual analysis of each problem. This helped me
+                           tremendously as I was finding a shortage of these problems. The test also introduced me to my
+                           peers who gave me tips on attempting certain types of questions.</p>
+                        <span>Mohammed Irfan Thayyil - <b>IIT Madras</b></span>
+                     </div>
+                  </div>
+                  <br><br>
+               </div>
+               <ol class="carousel-indicators">
+                  <li class="active" data-slide-to="0" data-target="#carousel-testimonials4"></li>
+                  <li data-slide-to="1" data-target="#carousel-testimonials4"></li>
+               </ol>
             </div>
          </div>
       </div>
+   </div>
+
+   <div class="highlight-info" id="highlight-info">
+      <div class="overlay spacer">
+         <div class="container">
+            <div class="row text-center">
+               <div class="col-sm-3 col-xs-12">
+                  <div class="counter wowload fadeInDown">
+                     <div class="stat"><span class="timer" data-from="0" data-to="10" id="counter1">10</span>+</div>
+                     <div class="stat-info">zones</div>
+                  </div>
+               </div>
+               <div class="col-sm-3 col-xs-12">
+                  <div class="counter wowload fadeInDown" style="-webkit-animation-delay: .5s; animation-delay: .5s;">
+                     <div class="stat"><span class="timer" data-from="0" data-to="20" id="counter2">20</span>+</div>
+                     <div class="stat-info">centres</div>
+                  </div>
+               </div>
+               <div class="col-sm-3 col-xs-12">
+                  <div class="counter wowload fadeInDown" style="-webkit-animation-delay: 1s; animation-delay: 1s;">
+                     <div class="stat"><span class="timer" data-from="0" data-to="50" id="counter3">50</span>+</div>
+                     <div class="stat-info">coordinators</div>
+                  </div>
+               </div>
+               <div class="col-sm-3 col-xs-12">
+                  <div class="counter wowload fadeInDown" style="-webkit-animation-delay: 1.5s; animation-delay: 1.5s;">
+                     <div class="stat"><span class="timer" data-from="0" data-to="15000" id="counter4">15000</span>+
+                     </div>
+                     <div class="stat-info">attendees</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div style="padding: 5%;" class="container spacer faq" id="faq">
+      <h2 class="text-center wowload fadeInUp">Frequently Asked Questions</h2>
+      <div class="row">
+         <div class="col-sm-6 wowload fadeInLeft">
+            <h4><i class="fa fa-question"></i> Why Tensors?</h4>
+            <p>The paper setters are IITians who have already written and have fared well in the JEE. Most of the
+               questions are think out of the box/ unconventional but keeping with JEE standards, the kind of problems
+               you might face in actual JEE exam. Very few questions are directly taken out of study materials. You can
+               also interact with IITians. Their personal experience during preparation might prove invaluable for your
+               own studies. There is also the added advantage of competing with JEE aspirants all over Kerala and Tamil
+               Nadu(Chennai, Coimbatore, Salem).</p>
+         </div>
+         <div class="col-sm-6 wowload fadeInRight">
+            <h4><i class="fa fa-question"></i> I haven’t finished my preparation, should I attempt?</h4>
+            <p>We encourage even the +1 students to attempt the exam. They may not understand some of the topics in the
+               test but will atleast get a flavour of time management needed during exam. Also the interactive session
+               may be more useful to them because they have more time for improvement. Plus two students who haven’t yet
+               covered the entire syllabus shouldn’t shy away from the test either. Perform the test with what you have
+               already studied and improve on your weakpoints.</p>
+         </div>
+         <div class="col-sm-6 wowload fadeInLeft">
+            <h4><i class="fa fa-question"></i> Who can apply?</h4>
+            <p>Any science stream student thinking of appearing for JEE 2019 or JEE 2020 can and should attempt Tensors,
+               although it will be more beneficial to the former.</p>
+         </div>
+         <div class="col-sm-6 wowload fadeInRight">
+            <h4><i class="fa fa-question"></i> I’m planning on attempting JEE Mains and undecided about JEE Advanced.
+            </h4>
+            <p>As stated above Tensors paper is prepared by IITians. The questions are unique and the interactive will
+               probably be more useful for you than any single lecture hour!!! Also in a few years, when you come into
+               IITM you might have to conduct the test yourself. That time you can’t ask others to write the test if you
+               haven’t attempted the test yourself!!!</p>
+         </div>
+      </div>
+   </div>
 
 
 
 
-      <!-- Decov Modal -->
-      <!--<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <!-- Decov Modal -->
+   <!--<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg modal-full-height modal-right" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -362,12 +454,12 @@
          </div>
       </div>-->
 
-      <!--end of modal-->
+   <!--end of modal-->
 
 
 
 
-      <!--<div class="container spacer about" id="decov">
+   <!--<div class="container spacer about" id="decov">
          <h1 class="text-center wowload fadeInUp" style="text-align: center; font-family: Arial, Helvetica, sans-serif;font-size: 50px;"><strong>DE-COV IDEATHON</strong></h1>
          <br><br>
          <div class="row container-fluid">
@@ -432,36 +524,53 @@
             </div>
          </div>
       </div>-->
-      <!--<div class="container spacer centres" id="centres">
+   <!--<div class="container spacer centres" id="centres">
          <h2 class="text-center wowload fadeInUp">Results</h2>
          <div style="text-align: center;">
          	<a href="http://tensors.in/centers.html"><button class="result_btn">Centre Wise</button></a>
          	<a href="assets/pdf/Top50.pdf" target="_blank"><button class="result_btn">Top 50</button></a>
          </div>
       </div>-->
-         
-        
-      <div class="footer text-center spacer" id="contact">
-      	<div class="row">
-            <div class="col-sm-6 wowload fadeIn"  style="padding: 2%;">
-               <h4 class="text-center wowload fadeInUp">Contact Us</h4>
-               <p>Anfas Nujum K - 8157925677<br>
+
+
+   <div class="footer text-center spacer" id="contact">
+      <div class="row">
+         <div class="col-sm-6 wowload fadeIn" style="padding: 2%;">
+            <h4 class="text-center wowload fadeInUp">Contact Us</h4>
+            <p>Anfas Nujum K - 8157925677<br>
                Faseeh Ahmed - 7034073143</p>
-            </div>
-            <div class="col-sm-6 wowload fadeIn"  style="padding: 2%;">
-               <p>
-                  <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i class="fa fa-instagram fa-3x fadeInDown"></i></a>&emsp;&emsp;
-                  <a href="https://www.facebook.com/tensorsofficial" id="facebook_button" target="_blank"><i class="fa fa-facebook fa-3x fadeInDown"></i></a>&emsp;&emsp;
-                  <a href="https://www.linkedin.com/company/53201198" id="facebook_button" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>&emsp;&emsp;                  
-                  <a href="mailto:tensorsofficial@gmail.com" id="facebook_button" target="_blank"><i class="fa fa-envelope fa-3x fadeInDown"></i></a>
-               </p>
-            </div>
-            <div class="col-sm-12 wowload fadeIn"  style="text-align: center; padding: 2%;">
-               <p><a href="mailto:tensorsofficial@gmail.com" target="_top">contact@tensors.in</a><br>Tensors © 2020</p>
-            </div>
+         </div>
+         <div class="col-sm-6 wowload fadeIn" style="padding: 2%;">
+            <p>
+               <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i
+                     class="fa fa-instagram fa-3x fadeInDown"></i></a>&emsp;&emsp;
+               <a href="https://www.facebook.com/tensorsofficial" id="facebook_button" target="_blank"><i
+                     class="fa fa-facebook fa-3x fadeInDown"></i></a>&emsp;&emsp;
+               <a href="https://www.linkedin.com/company/53201198" id="facebook_button" target="_blank"><i
+                     class="fa fa-linkedin fa-3x"></i></a>&emsp;&emsp;
+               <a href="mailto:tensorsofficial@gmail.com" id="facebook_button" target="_blank"><i
+                     class="fa fa-envelope fa-3x fadeInDown"></i></a>
+            </p>
+         </div>
+         <div class="col-sm-12 wowload fadeIn" style="text-align: center; padding: 2%;">
+            <p><a href="mailto:tensorsofficial@gmail.com" target="_top">contact@tensors.in</a><br>Tensors © 2020</p>
          </div>
       </div>
-      <a class="gototop hidden-xs" href="#home"><i class="fa fa-angle-up fa-3x"></i></a><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script src="assets/js/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script> <script src="assets/js/touchSwipe.min.js"></script> <script src="assets/js/respond.js"></script> <script src="assets/js/particles.min.js"></script> <script src="assets/js/jquery.waypoints.min.js"></script> <script src="assets/js/jquery-countTo.js"></script> <script src="assets/js/script.js"></script>
+   </div>
+   <a class="gototop hidden-xs" href="#home"><i class="fa fa-angle-up fa-3x"></i></a>
+   <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"
+      type="text/javascript"></script>
+   <script src="assets/js/touchSwipe.min.js"></script>
+   <script src="assets/js/respond.js"></script>
+   <script src="assets/js/particles.min.js"></script>
+   <script src="assets/js/jquery.waypoints.min.js"></script>
+   <script src="assets/js/jquery-countTo.js"></script>
+   <script src="assets/js/script.js"></script>
 
-   </body>
+</body>
+
 </html>
