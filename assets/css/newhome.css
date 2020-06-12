@@ -4,7 +4,7 @@
 #home > h1{margin-top: 23vh;margin-bottom: 0;}
 #home > h1 > img{max-width: 600px;width: 100%;}
 #home > a{position: absolute;bottom: 20px;font-size: 40px;}
-#particles-js{position: fixed; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-color: #232455; background-position: 50% 50%; z-index: -1000;}
+#particles-js{position: fixed; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-color: #12152a; background-position: 50% 50%; z-index: -1000;}
 .footer{background-color: rgba(17, 17, 17, 0.603);color: #fff;font-size: 1em;color: #aaa;}.footer a{color: #aaa;margin: 0 1em;}#facebook_button > i:hover{color: #3b5998;}.gototop{position: fixed;bottom: 20px;right: 20px;background: rgba(0,0,0,0.1);padding: 10px;color: #fff;}.gototop i{line-height: 0.5em;}
 
 .teamsocial > li {color: #fff;display: inline-block; padding: 2%;align-self: start;}
