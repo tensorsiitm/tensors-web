@@ -1,3 +1,23 @@
+#closed h3{
+    font-weight: bolder;
+    color: rgb(24, 62, 112);
+    font-size: xx-large;
+}
+#closed h5{
+    font-weight: bolder;
+    color: rgba(24, 62, 112, 0.795);
+    font-size: larger;
+    font-style: italic;
+}
+.alert-danger{
+    padding: 1%;
+    border-radius: 5px;
+}
+#facebook_button > i{color: rgb(24, 62, 112);padding: 2px;}
+#facebook_button > i:hover{color: rgb(16, 233, 186);padding: 3px;}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +56,6 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5%;
 }
 
 .block{
