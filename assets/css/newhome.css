@@ -1,9 +1,13 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #topbar{height: 4ex;vertical-align: middle;}
 #home{padding-top: 6em; text-align: center;min-height: 100vh;width: 100%;display: inline-block;margin: auto;}
-#home > h3{color: #239F85;font-family: 'Exo 2', sans-serif;font-size: 4vmin;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto;}
-#home > h1{margin-top: 23vh;margin-bottom: 0;}
-#home > h1 > img{max-width: 600px;width: 100%;}
-#home > a{position: absolute;bottom: 20px;font-size: 40px;}
+#home1 >  h3{color: #239F85;font-family: 'Exo 2', sans-serif;font-size: 4vmin;overflow: hidden;white-space: nowrap;animation: typing 4.5s steps(50, end);margin: -4vmin auto;}
+#home1 > h1{margin-top: 23vh;margin-bottom: 0;}
+#home1 > h1 > img{max-width: 600px;width: 100%;}
+#home1 > a{position: absolute;bottom: 20px;font-size: 40px;}
 #particles-js{position: fixed; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-color: #12152a; background-position: 50% 50%; z-index: -1000;}
 .footer{background-color: rgba(17, 17, 17, 0.603);color: #fff;font-size: 1em;color: #aaa;}.footer a{color: #aaa;margin: 0 1em;}#facebook_button > i:hover{color: #3b5998;}.gototop{position: fixed;bottom: 20px;right: 20px;background: rgba(0,0,0,0.1);padding: 10px;color: #fff;}.gototop i{line-height: 0.5em;}
 
@@ -15,105 +19,227 @@
 }
 
 #about{background-color: rgba(12, 110, 91, 0.363);padding-bottom: 5%;padding-top: 5%;color: blanchedalmond;}
+#about h2{color: blanchedalmond;text-align: center;font-weight: bolder;font-style: oblique;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 
-#team{padding-top: 5%;padding-bottom: 5%;  background-color: rgba(12, 110, 91, 0.363);}
-#team h3{font-weight: bolder;color: blanchedalmond;}
+#team{background-color: rgba(12, 110, 91, 0.363);padding-bottom: 5%;padding-top: 3%;color: blanchedalmond;}
+#team h2{color: blanchedalmond;text-align: center;font-weight: bolder;font-style: oblique;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 
 #branches{padding-bottom: 2%;padding-top: 2%;padding-left: 1%;padding-right: 1%;}
 #branches > h2{color: blanchedalmond;text-align: center;font-weight: bolder;font-style: oblique;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 
-.square{padding: 1%;background-color: rgba(12, 110, 90, 0.534); display: inline-table; text-align: justify;transform: rotateZ(45deg) ;color: blanchedalmond; height: 120px;width: 120px;border-color: blanchedalmond;border-style: double;border-width: 2px;overflow: visible;}
-.square h3{color: blanchedalmond;transform: rotateZ(-45deg);font-size: medium;font-weight: bolder;}
+
+.square{-moz-box-shadow:    inset 0 0 50px #141c5a;
+  -webkit-box-shadow: inset 0 0 50px #141c5a;
+  box-shadow:         inset 0 0 50px #141c5a;background-color: rgba(12, 110, 90, 0.534); display: inline-table; text-align: justify;border-radius: 75px; color: blanchedalmond; height: 150px;width: 150px;border-color: blanchedalmond;border-style: double;border-width: 2px;overflow: visible;}
+.square h3{color: blanchedalmond;font-size: medium;font-weight: bolder;}
 #branches .details{color: blanchedalmond;text-align: justify;padding-right: 5%;padding-left: 5%;padding-top: 2%;padding-bottom: 1%;}
 #branches .link{padding-top: 2%;padding-bottom: 2%;}
-.square:hover {padding: 1%;background-color: rgb(12, 110, 90);opacity: 0.9;height: 125px;width: 125px;}
-.square:hover h3{font-size: large;font-weight: bolder;}
-.square:hover .details > p{color: chartreuse;}
+.square:hover {-moz-box-shadow:inset 0 0 50px rgb(9, 161, 131);-webkit-box-shadow: inset 0 0 50px rgb(9, 161, 131);box-shadow:inset 0 0 50px rgb(9, 161, 131);padding: 1%;background-color: blanchedalmond;opacity: 0.9;height: 160px;width: 160px;border-radius: 80px;}
+.square:hover h3{font-size: large;font-weight: 900;color:#12152a ;}
 
-.col-centered {
-  float: none;
-  margin: 0 auto;
+
+
+
+.tab_button{
+  padding: 2%;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 20px;
+  border-color: white;
+  color: #141c5a;
+  -moz-box-shadow:    inset 0 0 50px rgb(9, 161, 131);
+  -webkit-box-shadow: inset 0 0 50px rgb(9, 161, 131);
+  box-shadow:         inset 0 0 50px rgb(9, 161, 131);
 }
-
-.carousel-control { 
-  width: 8%;
-  width: 0px;
+.tab_button:hover{
+  padding: 2.2%;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 25px;
+  background-color: #141c5a;
+  color: rgb(6, 255, 205);
 }
-.carousel-control.left,
-.carousel-control.right { 
-  margin-right: 40px;
-  margin-left: 32px; 
-  background-image: none;
-  opacity: 1;
-}
-.carousel-control > a > span {
-  color: white;
-  font-size: 29px !important;
-}
-
-.carousel-col { 
-  position: relative; 
-  min-height: 1px; 
-  padding-top: 5%;
-  padding-bottom: 5%;  
-  float: left;
-}
-
-.active > div { display:none; }
-.active > div:first-child { display:block; }
-
-/*xs*/
-@media (max-width: 767px) {
-.carousel-inner .active.left { left: -50%; }
-.carousel-inner .active.right { left: 50%; }
-.carousel-inner .next        { left:  50%; }
-.carousel-inner .prev		     { left: -50%; }
-.carousel-col                { width: 50%; }
-.active > div:first-child + div { display:block; }
-}
-
-/*sm*/
-@media (min-width: 768px) and (max-width: 991px) {
-.carousel-inner .active.left { left: -50%; }
-.carousel-inner .active.right { left: 50%; }
-.carousel-inner .next        { left:  50%; }
-.carousel-inner .prev		     { left: -50%; }
-.carousel-col                { width: 50%; }
-.active > div:first-child + div { display:block; }
-}
-
-/*md*/
-@media (min-width: 992px) and (max-width: 1199px) {
-.carousel-inner .active.left { left: -33%; }
-.carousel-inner .active.right { left: 33%; }
-.carousel-inner .next        { left:  33%; }
-.carousel-inner .prev		     { left: -33%; }
-.carousel-col                { width: 33%; }
-.active > div:first-child + div { display:block; }
-.active > div:first-child + div + div { display:block; }
-}
-
-/*lg*/
-@media (min-width: 1200px) {
-.carousel-inner .active.left { left: -25%; }
-.carousel-inner .active.right{ left:  25%; }
-.carousel-inner .next        { left:  25%; }
-.carousel-inner .prev		     { left: -25%; }
-.carousel-col                { width: 25%; }
-.active > div:first-child + div { display:block; }
-.active > div:first-child + div + div { display:block; }
-.active > div:first-child + div + div + div { display:block; }
-}
-
-.block {
-width: 306px;
-height: 230px;
-
+.treeview-colorful-items-header:hover{
+  background-color: #141c5a!important;
 }
 
 
 
 
+
+/*Team Tree*/
+* {margin: 0; padding: 0;}
+
+
+.tree ul {
+    padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/* remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #239F85;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #239F85;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: blanchedalmond;
+	font-family: cursive;
+	font-size: 15px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*hover effects*/
+
+.tree li a:hover, .tree li a:hover+ul li a {
+  background: #239F85; color: #000; border: 1px solid #94a0b4;
+  color:#09125a ;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #239F85;
+}
+/*--*/
+
+/* YOUR Carousel */  
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  height: auto;
+  width: 100%;
+  line-height: 1;
+}
+
+.carousel-fade .carousel-inner{
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
+-moz-box-shadow:    3px 3px 5px 6px #ccc;  
+box-shadow:         0px 1px 2px 3px #239F85; 
+}
+
+.carousel-fade .carousel-inner .item {
+opacity: 0;
+transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item img{
+  height: 300px;width: 100%;
+  border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  border-color: #141c5a ;
+  border-width: 2px;
+  border-style: solid; 
+}    
+.carousel-fade .carousel-inner .active {
+opacity: 1;
+}    
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+left: 0;
+opacity: 0;
+z-index: 1;
+}    
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+opacity: 1;
+}    
+.carousel-fade .carousel-control {
+z-index: 2;
+}
+
+/*WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+Need to override the 3.3 new styles for modern browsers & apply opacity*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+.carousel-fade .carousel-inner > .item.next,
+.carousel-fade .carousel-inner > .item.active.right {
+opacity: 0;
+-webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-inner > .item.prev,
+.carousel-fade .carousel-inner > .item.active.left {
+opacity: 0;
+-webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-inner > .item.next.left,
+.carousel-fade .carousel-inner > .item.prev.right,
+.carousel-fade .carousel-inner > .item.active {
+opacity: 1;
+-webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+}
+
+/*--*/
 
 
   /*team*/
