@@ -29,3 +29,22 @@ body{color: #333;font: 300 15px/15px Roboto,Arial,Helvetica;-webkit-font-smoothi
     color: #239F85;
     box-shadow: none;
 }
+
+#fullHeightModal p{
+    text-align: justify;
+    font-weight: 500;
+}
+#fullHeightModal h3{
+    font-weight: 800;
+    padding: 2%;
+}
+#fullHeightModal h4{
+    font-weight: 600;
+    color: #1d7e69;
+    font-style: italic;
+}
+#fullHeightModal h5{
+    font-weight: 600;
+    color: #1d7e69;
+    font-style: italic;
+}
